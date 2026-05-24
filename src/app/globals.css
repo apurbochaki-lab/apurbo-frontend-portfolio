@@ -1,26 +1,308 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  /* Original Portfolio Colors */
+  --color-brand: #c1ff72;
+  --color-dark: #0a0a0a;
+  --color-surface: #121212;
+  --font-sans: var(--font-plus-jakarta-sans), sans-serif;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* About Me Portfolio Colors */
+  --color-brand-neon: #c1ff72;
+  --color-on-surface: #e5e2e1;
+  --color-on-surface-variant: #c2c9b3;
+  --color-surface-container-highest: #353534;
+  --color-surface-container-high: #2a2a2a;
+  --color-surface-container: #201f1f;
+  --color-surface-container-low: #1c1b1b;
+  --color-surface-container-lowest: #0e0e0e;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Font Families */
+  --font-geist: var(--font-geist), sans-serif;
+  --font-geist-mono: var(--font-geist-mono), monospace;
+
+  /* Spacing */
+  --spacing-section-gap: 160px;
+  --spacing-margin-mobile: 20px;
+  --spacing-margin-desktop: 80px;
+  --spacing-gutter: 24px;
+  --spacing-container-max: 1280px;
+
+  /* Original Animations */
+  --animate-fade-in-up: fadeInUp 0.8s ease-out forwards;
+  --animate-glow-pulse: glowPulse 3s infinite ease-in-out;
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
+
+  @keyframes glowPulse {
+    0%, 100% {
+      box-shadow: 0 0 15px rgba(193, 255, 114, 0.2);
+    }
+    50% {
+      box-shadow: 0 0 30px rgba(193, 255, 114, 0.4);
+    }
+  }
+  /* AboutMeNew Colors */
+  --color-brand-accent: #c1ff72;
+  --color-surface-lowest: #0e0e0e;
+
+  /* JetBrains Mono font */
+  --font-jetbrains-mono: var(--font-jetbrains-mono), monospace;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Custom Typography Utilities (Tailwind v4 style) */
+@utility text-label-mono {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 14px;
+  line-height: 1.0;
+  letter-spacing: 0.1em;
+  font-weight: 500;
 }
+
+@utility text-display {
+  font-family: var(--font-geist), sans-serif;
+  font-size: 80px;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+}
+
+@utility text-headline-md {
+  font-family: var(--font-geist), sans-serif;
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+@utility text-body-md {
+  font-family: var(--font-geist), sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+@utility text-headline-lg-mobile {
+  font-family: var(--font-geist), sans-serif;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+@utility text-body-lg {
+  font-family: var(--font-geist), sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+@utility text-headline-lg {
+  font-family: var(--font-geist), sans-serif;
+  font-size: 48px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+@utility font-display {
+  font-family: var(--font-geist), sans-serif;
+}
+
+@utility font-label-mono {
+  font-family: var(--font-geist-mono), monospace;
+}
+
+@utility font-body-lg {
+  font-family: var(--font-geist), sans-serif;
+}
+
+/* Custom Utilities */
+.glass-nav {
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.profile-card-glow {
+  border: 1px solid rgba(193, 255, 114, 0.3);
+  box-shadow: 0 0 20px rgba(193, 255, 114, 0.1);
+}
+
+.text-outline {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+  color: transparent;
+}
+
+.hero-bg-gradient {
+  background: radial-gradient(circle at 70% 30%, rgba(193, 255, 114, 0.05) 0%, transparent 50%);
+}
+
+/* About Me specific styles */
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(193, 255, 114, 0.3);
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 40px rgba(193, 255, 114, 0.05);
+}
+
+.neon-glow {
+  filter: drop-shadow(0 0 8px rgba(193, 255, 114, 0.6));
+}
+
+.monospace {
+  font-family: var(--font-geist-mono), monospace;
+}
+
+.stat-divider {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+}
+
+.tracking-technical {
+  letter-spacing: 0.15em;
+}
+
+.asymmetric-up {
+  transform: translateY(-2rem);
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 40s linear infinite;
+}
+
+/* MyEducation Custom Styles */
+.glass-module {
+  background: rgba(10, 10, 10, 0.6);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(193, 255, 114, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.glass-module:hover {
+  border-color: #c1ff72;
+  transform: scale(1.02) translateY(-5px);
+  box-shadow: 0 0 40px rgba(193, 255, 114, 0.15);
+}
+
+.data-grid {
+  background-image: 
+    linear-gradient(rgba(193, 255, 114, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(193, 255, 114, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.scanline {
+  background: linear-gradient(to bottom, transparent, rgba(193, 255, 114, 0.05) 50%, transparent);
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  animation: scan 8s linear infinite;
+}
+
+@keyframes scan {
+  from { top: -10%; }
+  to { top: 110%; }
+}
+
+.float-anim {
+  animation: floating 6s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+/* MyProjects Custom Styles */
+.noise-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBgVH-FSK5ZotrKgJPk3lv-0fcHXkRtNrXB5HDUk0zbSzBLsk0dIeW6XZ6aAuIvQefSfiN2gzbeymiuQyMhsg_S0OpUuQqcZEaixKcS-sKtBmcDGOt7nPJo9s88YWdfs71AZEs9lkQxPyCjsHjjtfPW37a8QdhSU0uULGdMylL_s1SfMrI07VK_tuIFf3T1PUOVJq_3dQlmHdhprDi5B-GP2GB1sTGwxQZH9KnOfuK8qzspEmMq8t4_zPQqngyD4OV3lb1E5DxW22h-);
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.radial-glow-proj {
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(193, 255, 114, 0.05) 0%, rgba(5, 5, 5, 0) 70%);
+  border-radius: 50%;
+  z-index: 1;
+  filter: blur(80px);
+  pointer-events: none;
+  transition: transform 0.2s ease-out;
+}
+
+.neon-glow-text {
+  text-shadow: 0 0 10px rgba(193, 255, 114, 0.4);
+}
+
+.neon-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c1ff72, transparent);
+  opacity: 0.3;
+}
+
+.premium-ambient-glow {
+  box-shadow: 0 0 40px -10px rgba(193, 255, 114, 0.08), 0 0 20px -5px rgba(193, 255, 114, 0.05);
+  border: 1px solid rgba(193, 255, 114, 0.18) !important;
+}
+
+.edge-lit-glass {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+}
+
+.btn-glow {
+  position: relative;
+  background: rgba(5, 5, 5, 0.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(193, 255, 114, 0.3);
+  overflow: visible;
+}
+
+.btn-glow::after {
+  content: '';
+  position: absolute;
+  inset: -15px;
+  background: radial-gradient(circle, rgba(193, 255, 114, 0.12) 0%, transparent 70%);
+  z-index: -1;
+  filter: blur(10px);
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.btn-glow:hover::after {
+  opacity: 0.25;
+  filter: blur(15px);
+}
+
+.github-glow {
+  box-shadow: 0 0 50px -10px rgba(193, 255, 114, 0.15);
+}
+
+
