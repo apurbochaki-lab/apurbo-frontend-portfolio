@@ -3,14 +3,13 @@
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import AboutSection from "@/components/AboutSection";
 import SideNavigation from "@/components/SideNavigation";
-import Footer from "@/components/Footer";
-import HeroOld from "@/components/HeroOld";
 import AboutMeNew from "@/components/AboutMeNew";
 import MyProjects from "@/components/MyProjects";
 import TechStacks from "@/components/TechStacks";
 import MyEducation from "@/components/MyEducation";
+import LetsConnect from "@/components/LetsConnect";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   useEffect(() => {
@@ -59,12 +58,13 @@ export default function Home() {
         <HeroSection />
         {/* <AboutSection /> */}
         <AboutMeNew />
+        <MyProjects />
         <TechStacks />
         <MyEducation />
-        <MyProjects />
+        <LetsConnect />
       </main>
       <SideNavigation />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

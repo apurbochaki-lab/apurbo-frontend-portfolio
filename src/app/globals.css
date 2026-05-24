@@ -37,6 +37,7 @@
       opacity: 0;
       transform: translateY(20px);
     }
+
     100% {
       opacity: 1;
       transform: translateY(0);
@@ -44,19 +45,24 @@
   }
 
   @keyframes glowPulse {
-    0%, 100% {
+
+    0%,
+    100% {
       box-shadow: 0 0 15px rgba(193, 255, 114, 0.2);
     }
+
     50% {
       box-shadow: 0 0 30px rgba(193, 255, 114, 0.4);
     }
   }
+
   /* AboutMeNew Colors */
   --color-brand-accent: #c1ff72;
   --color-surface-lowest: #0e0e0e;
 
   /* JetBrains Mono font */
-  --font-jetbrains-mono: var(--font-jetbrains-mono), monospace;
+  --font-jetbrains-mono: var(--font-jetbrains-mono),
+  monospace;
 }
 
 /* Custom Typography Utilities (Tailwind v4 style) */
@@ -171,7 +177,7 @@
 .stat-divider {
   height: 1px;
   width: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
 }
 
 .tracking-technical {
@@ -183,8 +189,13 @@
 }
 
 @keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .animate-marquee {
@@ -208,7 +219,7 @@
 }
 
 .data-grid {
-  background-image: 
+  background-image:
     linear-gradient(rgba(193, 255, 114, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(193, 255, 114, 0.03) 1px, transparent 1px);
   background-size: 40px 40px;
@@ -223,8 +234,13 @@
 }
 
 @keyframes scan {
-  from { top: -10%; }
-  to { top: 110%; }
+  from {
+    top: -10%;
+  }
+
+  to {
+    top: 110%;
+  }
 }
 
 .float-anim {
@@ -232,8 +248,15 @@
 }
 
 @keyframes floating {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-15px); }
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
 }
 
 /* MyProjects Custom Styles */
@@ -305,4 +328,82 @@
   box-shadow: 0 0 50px -10px rgba(193, 255, 114, 0.15);
 }
 
+/* LetsConnect Custom Styles */
+.glow-blob {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(193, 255, 114, 0.08) 0%, rgba(193, 255, 114, 0) 70%);
+  filter: blur(80px);
+  z-index: 0;
+  pointer-events: none;
+  transition: transform 0.2s ease-out;
+}
+
+.glow-blob-about {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(193, 255, 114, 0.08) 0%, rgba(193, 255, 114, 0) 70%);
+  filter: blur(80px);
+  z-index: 0;
+  pointer-events: none;
+  transition: transform 0.2s ease-out;
+}
+
+.glow-blob-tech {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(193, 255, 114, 0.05) 0%, rgba(193, 255, 114, 0) 70%);
+  filter: blur(140px);
+  z-index: 0;
+  pointer-events: none;
+  transition: transform 0.2s ease-out;
+}
+
+
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(28px);
+  border: 1px solid rgba(193, 255, 114, 0.18);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(193, 255, 114, 0.03);
+}
+
+.neon-text-glow {
+  text-shadow: 0 0 15px rgba(193, 255, 114, 0.4);
+}
+
+.input-line {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 0;
+  transition: all 0.3s ease;
+}
+
+.input-line:focus {
+  outline: none;
+  border-bottom: 1px solid #c1ff72;
+  box-shadow: 0 2px 8px -2px rgba(193, 255, 114, 0.2);
+}
+
+.btn-primary-glow {
+  box-shadow: 0 8px 24px rgba(193, 255, 114, 0.25);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-primary-glow:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(193, 255, 114, 0.35);
+  filter: brightness(1.1);
+}
+
+.btn-primary-glow:active {
+  transform: scale(0.98);
+}
 

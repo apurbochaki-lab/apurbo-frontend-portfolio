@@ -1,38 +1,15 @@
 'use client'
 
-import { useEffect } from 'react'
-
-const TechStacks = () => {
-
-    useEffect(() => {
-        const handleMouseMove = (e) => {
-            const blobs = document.querySelectorAll('.glow-blob-tech')
-            const x = e.clientX
-            const y = e.clientY
-
-            blobs.forEach((blob, index) => {
-                const speed = (index + 1) * 0.015
-                const shiftX = (x - window.innerWidth / 2) * speed
-                const shiftY = (y - window.innerHeight / 2) * speed
-                blob.style.transform = `translate(${shiftX}px, ${shiftY}px)`
-            })
-        }
-
-        window.addEventListener('mousemove', handleMouseMove)
-        return () => {
-            window.removeEventListener('mousemove', handleMouseMove)
-        }
-    }, [])
+const TechStacksOld = () => {
     return (
-        <section className="w-full bg-[#0d0d0d] overflow-hidden relative px-5 md:px-20 lg:pb-10">
-            <div className="noise-overlay"></div>
+        <section className="w-[1440px] bg-[#131313] overflow-hidden relative px-5 md:px-20 lg:pb-10">
+            {/* Background Glow */}
+            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#c1ff72]/5 blur-[140px] rounded-full -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
 
-            {/* Background Blobs */}
-            <div className="glow-blob-tech -top-48 -left-48"></div>
-            <div className="glow-blob-tech -bottom-48 -right-48"></div>
+            <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#c1ff72]/5 blur-[140px] rounded-full translate-y-1/2 -translate-x-1/3 pointer-events-none"></div>
 
             {/* Main Container */}
-            <div className="w-full max-w-[1280px] mx-auto py-24 lg:py-32 relative z-10">
+            <div className="w-full max-w-[1280px] mx-auto py-24 lg:py-32">
 
                 {/* Header */}
                 <div className="text-center mb-20 lg:mb-24">
@@ -345,4 +322,4 @@ const TechStacks = () => {
     )
 }
 
-export default TechStacks
+export default TechStacksOld

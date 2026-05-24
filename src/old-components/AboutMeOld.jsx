@@ -21,24 +21,52 @@ const stats = [
     },
 ]
 
-const AboutMeNew = () => {
+const AboutMeOld = () => {
 
     useEffect(() => {
-        // Atmospheric mouse glow effect
-        const handleMouseMoveBlob = (e) => {
-            const blobs = document.querySelectorAll('.glow-blob-about')
-            const x = e.clientX
-            const y = e.clientY
+        const container = document.getElementById('particle-container')
 
-            blobs.forEach((blob, index) => {
-                const speed = (index + 1) * 0.02
-                const shiftX = (x - window.innerWidth / 2) * speed
-                const shiftY = (y - window.innerHeight / 2) * speed
-                blob.style.transform = `translate(${shiftX}px, ${shiftY}px)`
-            })
+        if (!container) return
+
+        container.innerHTML = ''
+
+        const particleCount = 15
+
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div')
+
+            particle.className =
+                'absolute rounded-full bg-[#c1ff72]/20 blur-xl'
+
+            const size = Math.random() * 200 + 100
+
+            particle.style.width = `${size}px`
+            particle.style.height = `${size}px`
+
+            particle.style.left = `${Math.random() * 100}%`
+            particle.style.top = `${Math.random() * 100}%`
+
+            particle.animate(
+                [
+                    {
+                        transform: 'translate(0,0) scale(1)',
+                    },
+                    {
+                        transform: `translate(${Math.random() * 50 - 25}px, ${Math.random() * 50 - 25}px) scale(1.1)`,
+                    },
+                    {
+                        transform: 'translate(0,0) scale(1)',
+                    },
+                ],
+                {
+                    duration: Math.random() * 5000 + 5000,
+                    iterations: Infinity,
+                    easing: 'ease-in-out',
+                }
+            )
+
+            container.appendChild(particle)
         }
-
-        window.addEventListener('mousemove', handleMouseMoveBlob)
 
         const cards = document.querySelectorAll('.glass-card')
 
@@ -80,7 +108,6 @@ const AboutMeNew = () => {
         }
 
         return () => {
-            window.removeEventListener('mousemove', handleMouseMoveBlob)
             cards.forEach((card) => {
                 card.removeEventListener('mousemove', handleMouseMove)
                 card.removeEventListener('mouseleave', handleMouseLeave)
@@ -89,12 +116,13 @@ const AboutMeNew = () => {
     }, [])
 
     return (
-        <section className='relative overflow-hidden bg-[#0e0e0e] text-[#e5e2e1] py-24 lg:py-32 px-5 md:px-20 w-full'>
-            <div className="noise-overlay"></div>
+        <section className='relative overflow-hidden bg-[#0e0e0e] text-[#e5e2e1] py-20 px-5 md:px-20'>
 
-            {/* Background Blobs */}
-            <div className="glow-blob-about -top-48 -left-48"></div>
-            <div className="glow-blob-about -bottom-48 -right-48"></div>
+            {/* Background Particles */}
+            <div
+                id='particle-container'
+                className='pointer-events-none absolute inset-0 opacity-20'
+            />
 
             <div className='mx-auto grid max-w-[1280px] grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-16 relative z-10'>
 
@@ -259,4 +287,4 @@ const AboutMeNew = () => {
     )
 }
 
-export default AboutMeNew
+export default AboutMeOld
