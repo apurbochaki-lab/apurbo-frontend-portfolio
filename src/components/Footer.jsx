@@ -141,7 +141,9 @@ const Footer = () => {
 
                                 {/* Resume Button */}
                                 <a
-                                    href="#"
+                                    href="https://drive.google.com/file/d/1P4Rjc18ZHskal-VZY_tw4HqGKt9MFYYH/view?usp=sharing"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="mt-2 flex items-center justify-between p-5 rounded-2xl bg-[#c1ff72] text-black font-bold hover:shadow-[0_0_25px_rgba(193,255,114,0.25)] transition-all duration-300 w-full md:w-[280px]"
                                 >
                                     <div className="flex items-center gap-3">
@@ -174,6 +176,8 @@ const Footer = () => {
                                 {/* CARD */}
                                 <Link
                                     href="https://github.com/apurbochaki-lab"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="group flex items-center justify-between p-5 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-[#c1ff72]/30 hover:bg-white/[0.05] transition-all duration-300"
                                 >
                                     <div className="flex items-center gap-4">
@@ -203,6 +207,8 @@ const Footer = () => {
                                 {/* CARD */}
                                 <Link
                                     href="https://www.linkedin.com/in/apurbo-chaki8"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="group flex items-center justify-between p-5 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-[#c1ff72]/30 hover:bg-white/[0.05] transition-all duration-300"
                                 >
                                     <div className="flex items-center gap-4">
@@ -231,7 +237,9 @@ const Footer = () => {
 
                                 {/* CARD */}
                                 <a
-                                    href="#"
+                                    href="https://wa.me/8801980282347"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="group flex items-center justify-between p-5 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-[#c1ff72]/30 hover:bg-white/[0.05] transition-all duration-300"
                                 >
                                     <div className="flex items-center gap-4">
@@ -244,11 +252,11 @@ const Footer = () => {
 
                                         <div>
                                             <h4 className="text-white font-medium text-sm">
-                                                Facebook Profile
+                                                Whatsapp Business
                                             </h4>
 
                                             <p className="text-xs text-gray-400">
-                                                Personal updates
+                                                Business updates
                                             </p>
                                         </div>
                                     </div>

@@ -98,13 +98,16 @@ const MyProjects = () => {
                             <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Express.js</span>
                             <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">MongoDB</span>
                         </div>
-                        <a className="flex items-center justify-center gap-2 w-full py-4 rounded-xl btn-glow text-[#c1ff72] font-mono text-xs tracking-wider transition-all duration-300 hover:text-white" href="https://sportnest-sports-facility.vercel.app">
+                        <a className="flex items-center justify-center gap-2 w-full py-4 rounded-xl btn-glow text-[#c1ff72] font-mono text-xs tracking-wider transition-all duration-300 hover:text-white" href="https://sportnest-sports-facility.vercel.app"
+                            target="_blank"
+                            rel="noopener noreferrer">
                             View Project <span className="material-symbols-outlined text-sm">open_in_new</span>
                         </a>
                     </div>
 
                     {/* Card 2: TaskFlow */}
-                    <div className="glass-card glass-card-project rounded-[24px] p-6 flex flex-col h-full group premium-ambient-glow edge-lit-glass">
+                    <div className="glass-card glass-card-project rounded-[24px] p-6 flex flex-col h-full group premium-ambient-glow edge-lit-glass"
+                    >
                         <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden mb-6">
                             <img
                                 alt="TaskFlow"
@@ -126,13 +129,16 @@ const MyProjects = () => {
                             <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Express.js</span>
                             <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">MongoDB</span>
                         </div>
-                        <a className="flex items-center justify-center gap-2 w-full py-4 rounded-xl btn-glow text-[#c1ff72] font-mono text-xs tracking-wider transition-all duration-300 hover:text-white" href="https://wanderlast-traveling-agency.vercel.app">
+                        <a className="flex items-center justify-center gap-2 w-full py-4 rounded-xl btn-glow text-[#c1ff72] font-mono text-xs tracking-wider transition-all duration-300 hover:text-white" href="https://wanderlast-traveling-agency.vercel.app"
+                            target="_blank"
+                            rel="noopener noreferrer">
                             View Project <span className="material-symbols-outlined text-sm">open_in_new</span>
                         </a>
                     </div>
 
                     {/* Card 3: Urbanic */}
-                    <div className="glass-card glass-card-project rounded-[24px] p-6 flex flex-col h-full group premium-ambient-glow edge-lit-glass">
+                    <div className="glass-card glass-card-project rounded-[24px] p-6 flex flex-col h-full group premium-ambient-glow edge-lit-glass"
+                    >
                         <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden mb-6">
                             <img
                                 alt="Urbanic"
@@ -153,7 +159,9 @@ const MyProjects = () => {
                             <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Mongo DB</span>
                             <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Hero UI</span>
                         </div>
-                        <a className="flex items-center justify-center gap-2 w-full py-4 rounded-xl btn-glow text-[#c1ff72] font-mono text-xs tracking-wider transition-all duration-300 hover:text-white" href="https://tiles-gallery-rust.vercel.app">
+                        <a className="flex items-center justify-center gap-2 w-full py-4 rounded-xl btn-glow text-[#c1ff72] font-mono text-xs tracking-wider transition-all duration-300 hover:text-white" href="https://tiles-gallery-rust.vercel.app"
+                            target="_blank"
+                            rel="noopener noreferrer">
                             View Project <span className="material-symbols-outlined text-sm">open_in_new</span>
                         </a>
                     </div>

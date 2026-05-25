@@ -54,9 +54,7 @@ export default function Home() {
     <>
       <Navbar />
       <main className="flex flex-col items-center w-full min-h-screen">
-        {/* <HeroOld/> */}
         <HeroSection />
-        {/* <AboutSection /> */}
         <AboutMeNew />
         <MyProjects />
         <TechStacks />

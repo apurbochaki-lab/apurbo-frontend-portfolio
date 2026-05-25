@@ -94,7 +94,10 @@ export default function HeroSection() {
                       </div>
                       Let's talk
                     </button>
-                    <button className="flex items-center gap-2 border border-white/10 px-6 py-3 rounded-full font-bold text-sm hover:bg-white/5 transition-colors cursor-pointer">
+
+                    <a href="/Apurbo's_Resume.pdf" download="Apurbo's_Resume.pdf"
+                    className="flex items-center gap-2 border border-white/10 px-6 py-3 rounded-full font-bold text-sm hover:bg-white/5 transition-colors cursor-pointer">
+                    
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path
                           d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
@@ -104,7 +107,8 @@ export default function HeroSection() {
                         />
                       </svg>
                       Download CV
-                    </button>
+                    </a>
+
                   </div>
                 </div>
               </div>
@@ -150,7 +154,7 @@ export default function HeroSection() {
               <span className="px-4 py-1 bg-brand text-dark rounded-full inline-block">modern</span>
               <br />
               <span className="inline-block px-4 py-1 border-2 border-brand text-brand rounded-full mt-2">
-               websites
+                websites
               </span>{" "}
               that people remember
             </h1>

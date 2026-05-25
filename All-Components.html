@@ -1,0 +1,1316 @@
+// ================= NAVBAR =================
+<header className="fixed top-0 left-0 w-full z-50 glass-nav h-20 flex items-center">
+  <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
+    <div className="text-xl font-extrabold tracking-tight" data-purpose="logo">
+      Apurbo Chaki<span className="text-brand">.</span>
+    </div>
+    {/* Navigation Links */}
+    <nav className="hidden md:flex items-center gap-8 bg-white/5 px-6 py-2.5 rounded-full border border-white/10">
+      <a className="text-md font-semibold hover:text-brand transition-colors" href="#AboutMeNew">
+        About Me
+      </a>
+      <a className="text-md font-semibold hover:text-brand transition-colors" href="#experience">
+        My Projects
+      </a>
+      <a className="text-md font-semibold hover:text-brand transition-colors" href="#projects">
+        Tech Stacks
+      </a>
+      <a className="text-md font-semibold hover:text-brand transition-colors" href="#contact">
+        Education
+      </a>
+      {/* Theme Toggle Dummy */}
+      <div onClick={()=> setThemeActive(!themeActive)}
+        className="w-10 h-5 bg-zinc-800 rounded-full relative cursor-pointer flex items-center px-0.5"
+        >
+        <div className={`w-4 h-4 rounded-full transition-transform duration-300 ${themeActive ? "translate-x-5 bg-brand"
+          : "translate-x-0 bg-white" }`}></div>
+      </div>
+    </nav>
+    <div className="flex items-center gap-4">
+      <a className="px-6 py-2.5 border border-white/20 rounded-full text-md font-semibold hover:bg-white hover:text-black transition-all duration-300"
+        href="#">
+        Download CV
+      </a>
+    </div>
+  </div>
+</header>
+
+// ================= HERO SECTION =================
+<section
+  className=" w-full min-h-screen pt-10 flex flex-col items-center justify-center relative hero-bg-gradient overflow-hidden">
+  <div className="w-full max-w-[1280px] mx-auto px-5 sm:px-8 md:px-12 lg:px-16 py-12 md:py-24">
+    <div className="grid lg:grid-cols-12 gap-12 items-center">
+      {/* Profile Card Left Column */}
+      <div className="lg:col-span-5 animate-fade-in-up animate-fade-in" style={{ animationDelay: "0.1s" }}>
+        <div className="relative group" data-purpose="profile-card-container">
+          {/* Profile Card */}
+          <div className="relative z-10 bg-[#141414] rounded-[2.5rem] p-6 profile-card-glow overflow-hidden">
+            <div className="aspect-[4/5] rounded-3xl overflow-hidden relative mb-8">
+              <img alt="Apurbo Chaki's Portrait" className="w-full h-full object-cover"
+                src="https://i.ibb.co.com/pvvybtGW/Apurbo-Chaki.png" />
+              {/* Overlay Elements */}
+              <div
+                className="absolute top-4 left-4 w-10 h-10 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20">
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                </svg>
+              </div>
+              {/* Floating Social Icons */}
+              <div className="absolute top-4 right-4 flex flex-col gap-3">
+                <div
+                  className="w-8 h-8 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 cursor-pointer hover:bg-brand hover:text-dark transition-colors">
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                  </svg>
+                </div>
+                <div
+                  className="w-8 h-8 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 cursor-pointer hover:bg-brand hover:text-dark transition-colors">
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z" />
+                  </svg>
+                </div>
+              </div>
+              {/* Vertical Tag */}
+              <div
+                className="absolute bottom-1/2 left-0 -translate-x-[40%] translate-y-1/2 -rotate-90 origin-center whitespace-nowrap">
+                <div
+                  className="flex items-center gap-2 px-3 py-1 bg-brand/10 backdrop-blur-sm border border-brand/20 rounded-full">
+                  <div className="w-1.5 h-1.5 rounded-full bg-brand animate-pulse"></div>
+                  <span className="text-[10px] font-bold text-brand uppercase tracking-wider">
+                    Available for Work
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="space-y-4">
+              <h3 className="text-2xl font-bold">Hey, I’m Apurbo</h3>
+              <p className="text-zinc-400 text-sm leading-relaxed font-medium">
+                I create clean, responsive, and user-focused websites that combine modern UI with smooth performance
+                helping startups, brands, and businesses.
+              </p>
+              <div className="flex flex-wrap items-center gap-3 pt-4">
+                <button
+                  className="flex items-center gap-2 bg-brand text-dark px-6 py-3 rounded-full font-bold text-sm hover:scale-105 transition-transform cursor-pointer">
+                  <div className="w-5 h-5 bg-dark text-brand rounded-full flex items-center justify-center">
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path d="M14 5l7 7m0 0l-7 7m7-7H3" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" />
+                    </svg>
+                  </div>
+                  Let's talk
+                </button>
+                <button
+                  className="flex items-center gap-2 border border-white/10 px-6 py-3 rounded-full font-bold text-sm hover:bg-white/5 transition-colors cursor-pointer">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" strokeLinecap="round"
+                      strokeLinejoin="round" strokeWidth="2" />
+                  </svg>
+                  Download CV
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Content Right Column */}
+      <div className="lg:col-span-7 relative animate-fade-in-up animate-fade-in" style={{ animationDelay: "0.3s" }}>
+        {/* Background Ribbon Image */}
+        <div
+          className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] opacity-40 mix-blend-screen pointer-events-none">
+          <img alt="Futuristic Wave" className="w-full h-full object-contain opacity-30"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKW5yBCnJiPjhLH87iqMk50EhXThjbDDnEqgbaDMY6Gr-eEOwxJmhyP1gG6WUH_qASw33mmRAqu2qbKKusPnDvivqpHGq1Q93nopL6VS3UYkfNoXh9TrzEa-Ctp77AqEew1TnHxcb3vmxRe7HQPSPJYknLM3YiCe2jjH8p-TMkJuD1BA33udIv9_jN3rZTqoNifeQnay1hPe_Lp2oylnGE5EF3kXrE24bnLWW-MVPdlpyWSKvCfdm7zye6w27ZCEH_L8hJ45029fNM" />
+        </div>
+        {/* Top Status Bar */}
+        <div className="flex justify-between items-start mb-12">
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 rounded-full overflow-hidden border border-white/20">
+              <img alt="Apurbo Chaki" className="w-full h-full object-cover"
+                src="https://i.ibb.co.com/pvvybtGW/Apurbo-Chaki.png" />
+            </div>
+            <div>
+              <p className="font-bold text-sm">Apurbo Chaki</p>
+              <p className="text-zinc-500 text-[10px] uppercase tracking-widest font-semibold">
+                Frontend Developer &amp; Creative UI Engineer
+              </p>
+            </div>
+          </div>
+          <div className="text-right">
+            <p className="text-xs font-bold text-zinc-500">{date}</p>
+            <p className="text-lg font-bold text-white leading-none">{time}</p>
+          </div>
+        </div>
+        {/* Main Headline */}
+
+        <h1 className="text-5xl md:text-7xl font-extrabold leading-[1.1] mb-12" data-purpose="hero-headline">
+          I build fast{" "}
+          <span className="px-4 py-1 bg-brand text-dark rounded-full inline-block">modern</span>
+          <br />
+          <span className="inline-block px-4 py-1 border-2 border-brand text-brand rounded-full mt-2">
+            websites
+          </span>{" "}
+          that people remember
+        </h1>
+        {/* Floating Badge */}
+        <div className="relative h-20 mb-16">
+          <div className="absolute right-20 top-0 w-32 h-32 flex items-center justify-center">
+            <div className="absolute inset-0 animate-spin" style={{ animationDuration: "20s" }}>
+              <svg className="w-full h-full fill-white/20 text-[10px] uppercase tracking-widest font-bold"
+                viewBox="0 0 100 100">
+                <path d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent" id="circlePath" />
+                <text>
+                  <textPath href="#circlePath">AWARD WINNING AGENCY - SINCE 2022 - </textPath>
+                </text>
+              </svg>
+            </div>
+            <div
+              className="w-16 h-16 bg-brand/20 backdrop-blur-xl rounded-full border border-brand/30 flex items-center justify-center">
+              <div className="flex flex-col gap-0.5">
+                <div className="w-8 h-1 bg-brand rounded-full"></div>
+                <div className="w-10 h-1 bg-brand/60 rounded-full"></div>
+                <div className="w-8 h-1 bg-brand/40 rounded-full"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Statistics */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-white/5 pt-12">
+          <div>
+            <p className="text-4xl font-bold mb-1">1+</p>
+            <p className="text-zinc-500 text-xs font-medium uppercase tracking-wider">Years of experience</p>
+          </div>
+          <div>
+            <p className="text-4xl font-bold mb-1">10+</p>
+            <p className="text-zinc-500 text-xs font-medium uppercase tracking-wider">Modern Projects</p>
+          </div>
+        </div>
+        {/* Client Section */}
+
+      </div>
+    </div>
+  </div>
+</section>
+
+// ================= ABOUT SECTION =================
+<section className='relative overflow-hidden bg-[#0e0e0e] text-[#e5e2e1] py-24 lg:py-32 px-5 md:px-20 w-full'>
+  <div className="noise-overlay"></div>
+
+  {/* Background Blobs */}
+  <div className="glow-blob-about -top-48 -left-48"></div>
+  <div className="glow-blob-about -bottom-48 -right-48"></div>
+
+  <div className='mx-auto grid max-w-[1280px] grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-16 relative z-10'>
+
+    {/* Left Content */}
+    <div className='order-2 flex flex-col items-start space-y-10 lg:col-span-7 lg:order-1'>
+
+      {/* Heading */}
+      <div className='space-y-4'>
+        <div
+          className='inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 backdrop-blur-sm'>
+          <span className='h-2 w-2 animate-pulse rounded-full bg-[#c1ff72] shadow-[0_0_8px_#c1ff72]' />
+          <span className='font-mono text-sm tracking-[0.2em] text-[#c2c9b3]'>
+            WHO I AM
+          </span>
+        </div>
+
+        <div className='relative'>
+          <h1 className='text-5xl font-bold leading-tight tracking-[-0.04em] md:text-6xl lg:text-[80px]'>
+            About{' '}
+            <span className='text-[#c1ff72]'>
+              Me
+            </span>
+          </h1>
+
+          <div className='mt-1 h-[2px] w-[120px] bg-gradient-to-r from-[#c1ff72] to-transparent' />
+        </div>
+      </div>
+
+      {/* Description */}
+      <div className='space-y-8'>
+
+        <div className='space-y-6'>
+
+          <div className='flex items-center gap-2'>
+            <span className='h-2 w-2 rounded-full bg-[#c1ff72]' />
+
+            <p className='font-mono text-sm tracking-wide text-[#c1ff72]'>
+              Let's Connect And Create Together
+            </p>
+          </div>
+
+          <div className='space-y-4 text-lg leading-[1.8] text-[#c2c9b3]'>
+
+            {/* */}
+
+            <p>
+              I&apos;m a frontend web developer focused on building{' '}
+              <span className='font-medium text-[#c1ff72]'>
+                modern, responsive <span className='text-[#c2c9b3]'>and</span> user-friendly
+              </span>{' '}
+              digital experiences. I combine clean design with functional development to create websites that not only{'
+              '}
+              <span className='font-medium text-[#c1ff72]'>
+                look professional
+              </span>
+              but also feel <span className='font-medium text-[#c1ff72]'>smooth, fast,</span> and intuitive for users.
+
+            </p>
+
+            {/* <p>
+              Every project is an opportunity to create something meaningful,
+              and I thrive on bringing{' '}
+              <span className='font-medium text-[#c1ff72]'>
+                clarity and impact
+              </span>{' '}
+              to every digital interaction.
+            </p> */}
+
+          </div>
+
+        </div>
+
+        {/* Stats */}
+        <div className='grid grid-cols-1 gap-4 pt-4 sm:grid-cols-3'>
+
+          {
+          stats.map((stat, index) => (
+          <div key={index}
+            className='glass-card group rounded-3xl border border-white/5 bg-white/[0.04] p-5 backdrop-blur-xl transition-all duration-300 hover:border-[#c1ff72]/20 hover:bg-white/[0.08]'>
+
+            <div
+              className='mb-4 flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-[#c1ff72] transition-colors group-hover:border-[#c1ff72]/30'>
+              {stat.icon}
+            </div>
+
+            <div className='space-y-1'>
+              <h3 className='text-3xl font-bold text-white transition-colors group-hover:text-[#c1ff72]'>
+                {stat.value}
+              </h3>
+
+              <p className='font-mono text-[10px] uppercase tracking-[0.25em] text-[#656464]'>
+                {stat.label}
+              </p>
+            </div>
+
+          </div>
+          ))
+          }
+
+        </div>
+
+      </div>
+
+      {/* Buttons */}
+      <div className='flex flex-wrap gap-4 pt-4'>
+
+        <button
+          className='flex items-center gap-3 rounded-xl bg-[#c1ff72] px-8 py-4 font-bold text-black shadow-[0_0_24px_rgba(193,255,114,0.2)] transition-all duration-300 hover:scale-105 active:scale-95'>
+          <Download size={20} />
+          <span>DOWNLOAD CV</span>
+        </button>
+
+        <button
+          className='group rounded-xl border border-white/20 p-4 transition-all duration-300 hover:border-[#c1ff72]'>
+          <ArrowRight className='text-white transition-colors group-hover:text-[#c1ff72]' />
+        </button>
+
+      </div>
+
+    </div>
+
+    {/* Right Image */}
+    <div className='order-1 relative flex justify-center lg:col-span-5 lg:order-2 lg:justify-end'>
+
+      <div className='pointer-events-none absolute inset-0 scale-75 rounded-full bg-[#c1ff72]/5 blur-[120px]' />
+
+      <div
+        className='glass-card group relative aspect-[0.75/1] w-full max-w-[480px] overflow-hidden rounded-3xl border border-[#c1ff72]/20 bg-white/[0.04] backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-[#c1ff72]/40'>
+
+        <img src='https://i.ibb.co.com/pvvybtGW/Apurbo-Chaki.png' alt='Apurbo Chaki'
+          className='h-full w-full object-cover grayscale brightness-90 transition-all duration-700 group-hover:grayscale-0' />
+
+        {/* Overlay */}
+        <div className='absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 to-transparent p-8 backdrop-blur-sm'>
+
+          <div className='flex items-end justify-between'>
+
+            <div className='space-y-1'>
+              <p className='font-mono text-sm tracking-widest text-[#c1ff72]'>
+                FONTEND WEB DEVELOPER
+              </p>
+
+              <h3 className='text-2xl font-semibold text-white'>
+                Apurbo Chaki
+              </h3>
+            </div>
+
+            <button
+              className='group/btn flex h-12 w-12 items-center justify-center rounded-full border border-[#c1ff72]/30 bg-[#c1ff72]/10 transition-all duration-300 hover:bg-[#c1ff72]'>
+              <Play className='text-[#c1ff72] transition-colors group-hover/btn:text-black' />
+            </button>
+
+          </div>
+
+        </div>
+
+        <div className='pointer-events-none absolute inset-0 rounded-3xl border border-white/5' />
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+// ================= MY PROJECTS SECTION =================
+<section className="w-full bg-[#050505] relative overflow-hidden py-24 lg:py-24 px-5 md:px-20">
+  {/* Background elements */}
+  <div className="noise-overlay"></div>
+  <div className="radial-glow-proj top-[-400px] left-[-200px] opacity-5"></div>
+  <div className="radial-glow-proj bottom-[-400px] right-[-200px] opacity-5"></div>
+
+  <div className="w-full max-w-[1280px] mx-auto relative z-10">
+    {/* Header Section */}
+    <div className="flex flex-col items-center text-center mb-24">
+      <span className="text-xs font-mono text-[#c1ff72] mb-4 tracking-[0.2em] uppercase">// MY WORK</span>
+      <h2 className="font-display text-5xl md:text-[48px] font-bold uppercase tracking-tighter text-white mb-6">
+        MY <span className="text-[#c1ff72] neon-glow-text">PROJECTS</span>
+      </h2>
+      <p className="max-w-2xl text-lg text-gray-400 mb-10 leading-relaxed">
+        Here are some of the projects I've built with passion and precision. Each project is crafted to solve real world
+        problems and deliver exceptional user experiences.
+      </p>
+      <div className="w-full max-w-4xl px-4 flex justify-center items-center">
+        <div className="neon-divider flex-grow"></div>
+        <div className="w-2 h-2 rounded-full bg-[#c1ff72] mx-4 shadow-[0_0_10px_#c1ff72]"></div>
+        <div className="neon-divider flex-grow"></div>
+      </div>
+    </div>
+
+    {/* Project Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+      {/* Card 1: SportNest */}
+      <div
+        className="glass-card glass-card-project rounded-[24px] p-6 flex flex-col h-full group premium-ambient-glow edge-lit-glass">
+        <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden mb-6">
+          <img alt="SportNest"
+            className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+            src="https://i.ibb.co/mVXmHwwp/Screenshot-770.png" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#050505] to-transparent opacity-60"></div>
+        </div>
+        <span className="text-xs font-mono text-[#c1ff72] mb-2 tracking-wider">PROJECT 01</span>
+        <h3 className="text-xl md:text-2xl font-bold text-white mb-3">SportNest</h3>
+        <p className="text-sm text-gray-400 mb-8 flex-grow leading-relaxed">
+          A modern and responsive sports facility booking management platform where users can explore sports facilities,
+          book available time slots, and manage their own facilities seamlessly.
+        </p>
+        <div className="flex flex-wrap gap-2 mb-8">
+          <span
+            className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Next.js</span>
+          <span
+            className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Tailwind
+            CSS 4</span>
+          <span
+            className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">JavaScript</span>
+          <span
+            className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Better
+            Auth</span>
+          <span
+            className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Express.js</span>
+          <span
+            className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">MongoDB</span>
+        </div>
+        <a className="flex items-center justify-center gap-2 w-full py-4 rounded-xl btn-glow text-[#c1ff72] font-mono text-xs tracking-wider transition-all duration-300 hover:text-white"
+          href="https://sportnest-sports-facility.vercel.app">
+          View Project <span className="material-symbols-outlined text-sm">open_in_new</span>
+        </a>
+      </div>
+
+      {/* Card 2: TaskFlow */}
+      <div
+        className="glass-card glass-card-project rounded-[24px] p-6 flex flex-col h-full group premium-ambient-glow edge-lit-glass">
+        <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden mb-6">
+          <img alt="TaskFlow"
+            className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+            src="https://i.ibb.co/VZd5wRx/Screenshot-771.png" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#050505] to-transparent opacity-60"></div>
+        </div>
+        <span className="text-xs font-mono text-[#c1ff72] mb-2 tracking-wider">PROJECT 02</span>
+        <h3 className="text-xl md:text-2xl font-bold text-white mb-3">WanderLast Traveling Agency</h3>
+        <p className="text-sm text-gray-400 mb-8 flex-grow leading-relaxed">
+          This is a website that you can you post new destination with in-detailed information for people can buy it for
+          visiting the place.
+        </p>
+        <div className="flex flex-wrap gap-2 mb-8">
+          <span
+            className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Next.js</span>
+          <span
+            className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Tailwind
+            CSS 4</span>
+          <span
+            className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">JavaScript</span>
+          <span
+            className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Better
+            Auth</span>
+          <span
+            className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Express.js</span>
+          <span
+            className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">MongoDB</span>
+        </div>
+        <a className="flex items-center justify-center gap-2 w-full py-4 rounded-xl btn-glow text-[#c1ff72] font-mono text-xs tracking-wider transition-all duration-300 hover:text-white"
+          href="https://wanderlast-traveling-agency.vercel.app">
+          View Project <span className="material-symbols-outlined text-sm">open_in_new</span>
+        </a>
+      </div>
+
+      {/* Card 3: Urbanic */}
+      <div
+        className="glass-card glass-card-project rounded-[24px] p-6 flex flex-col h-full group premium-ambient-glow edge-lit-glass">
+        <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden mb-6">
+          <img alt="Urbanic"
+            className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+            src="https://i.ibb.co/Dg7r6QLK/Screenshot-772.png" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#050505] to-transparent opacity-60"></div>
+        </div>
+        <span className="text-xs font-mono text-[#c1ff72] mb-2 tracking-wider">PROJECT 03</span>
+        <h3 className="text-xl md:text-2xl font-bold text-white mb-3">Tiles Gallery</h3>
+        <p className="text-sm text-gray-400 mb-8 flex-grow leading-relaxed">
+          A modern and responsive web application to showcase a beautiful collection of tiles. Users can explore,
+          search, and view detailed information about different tiles, along with authentication and profile management
+          features.
+        </p>
+        <div className="flex flex-wrap gap-2 mb-8">
+          <span
+            className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Next.js</span>
+          <span
+            className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">JavaScript</span>
+          <span
+            className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Tailwind
+            CSS 4</span>
+          <span
+            className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Mongo
+            DB</span>
+          <span
+            className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Hero
+            UI</span>
+        </div>
+        <a className="flex items-center justify-center gap-2 w-full py-4 rounded-xl btn-glow text-[#c1ff72] font-mono text-xs tracking-wider transition-all duration-300 hover:text-white"
+          href="https://tiles-gallery-rust.vercel.app">
+          View Project <span className="material-symbols-outlined text-sm">open_in_new</span>
+        </a>
+      </div>
+
+    </div>
+
+    {/* GitHub Action Section */}
+    <div className="mt-18 flex justify-center">
+      <a className="group relative flex items-center gap-4 px-10 py-5 rounded-full border border-white/5 overflow-hidden transition-all duration-500 hover:scale-105 hover:border-[#c1ff72]/50 btn-glow github-glow"
+        href="https://github.com/apurbochaki-lab" target="_blank" rel="noopener noreferrer">
+        {/* Inner Glow */}
+        <div className="absolute inset-0 bg-[#c1ff72] opacity-0 group-hover:opacity-5 transition-opacity duration-500">
+        </div>
+        <span className="material-symbols-outlined text-[#c1ff72] text-3xl">terminal</span>
+        <span className="text-xs font-mono font-bold text-white tracking-widest uppercase">Check Out More on
+          GitHub</span>
+        <div
+          className="w-8 h-8 flex items-center justify-center rounded-full bg-white/10 group-hover:bg-[#c1ff72] transition-colors duration-300">
+          <svg className="w-5 h-5 fill-current text-white group-hover:text-[#050505]" viewBox="0 0 24 24">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.627-5.373-12-12-12" />
+          </svg>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+// ================= TECH STACKS SECTION =================
+<section className="w-full bg-[#0d0d0d] overflow-hidden relative px-5 md:px-20 lg:pb-10">
+  <div className="noise-overlay"></div>
+
+  {/* Background Blobs */}
+  <div className="glow-blob-tech -top-48 -left-48"></div>
+  <div className="glow-blob-tech -bottom-48 -right-48"></div>
+
+  {/* Main Container */}
+  <div className="w-full max-w-[1280px] mx-auto py-24 lg:py-32 relative z-10">
+
+    {/* Header */}
+    <div className="text-center mb-20 lg:mb-24">
+
+      <div className="inline-flex items-center gap-4 mb-6">
+        <div className="w-1.5 h-1.5 rounded-full bg-[#c1ff72]"></div>
+
+        <span className="text-[10px] sm:text-xs tracking-[0.3em] uppercase font-semibold text-gray-400">
+          Built With Modern Technologies
+        </span>
+
+        <div className="w-1.5 h-1.5 rounded-full bg-[#c1ff72]"></div>
+      </div>
+
+      <h1
+        className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-[-0.05em] text-white leading-none">
+        TECH{" "}
+        <span className="text-[#c1ff72] drop-shadow-[0_0_18px_rgba(193,255,114,0.45)]">
+          STACK
+        </span>
+      </h1>
+
+      <div className="flex items-center justify-center gap-5 my-8">
+        <div className="h-[1px] w-20 sm:w-28 bg-gradient-to-r from-transparent to-[#c1ff72]"></div>
+
+        <span className="text-[10px] sm:text-xs uppercase tracking-[0.3em] text-gray-300 font-mono">
+          The Engineering Ecosystem
+        </span>
+
+        <div className="h-[1px] w-20 sm:w-28 bg-gradient-to-l from-transparent to-[#c1ff72]"></div>
+      </div>
+
+      <p className="max-w-3xl mx-auto text-sm sm:text-base text-gray-400 leading-8">
+        A carefully curated set of technologies, frameworks,
+        and tools I use to build fast, scalable, and modern web
+        applications.
+      </p>
+    </div>
+
+    {/* Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-7">
+
+      {/* Frontend */}
+      <div
+        className="md:col-span-7 rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl p-8 lg:p-10 transition-all duration-500 ease-out hover:-translate-y-2 hover:border-[#c1ff72] hover:shadow-[0_10px_30px_rgba(193,255,114,0.05)]">
+
+        <div className="flex items-center gap-3 mb-10">
+          <h2 className="text-xs uppercase tracking-[0.25em] text-white font-semibold">
+            Frontend
+          </h2>
+
+          <div className="flex-1 h-px bg-white/10"></div>
+        </div>
+
+        <div className="flex flex-wrap gap-8 lg:gap-12">
+
+          {[
+          {
+          name: "HTML5",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+          },
+          {
+          name: "CSS3",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+          },
+          {
+          name: "JavaScript",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+          },
+          {
+          name: "TypeScript",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+          },
+          {
+          name: "Tailwind",
+          img: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
+          },
+          ].map((tech) => (
+          <div key={tech.name} className="flex flex-col items-center group">
+            <div
+              className="w-16 h-16 rounded-full border border-white/10 bg-black/40 flex items-center justify-center mb-3 transition-all duration-300 group-hover:border-[#c1ff72]/50 group-hover:shadow-[0_0_30px_rgba(193,255,114,0.15)]">
+              <img src={tech.img} alt={tech.name} className="w-10 h-10 object-contain" />
+            </div>
+
+            <span className="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-mono">
+              {tech.name}
+            </span>
+          </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Backend */}
+      <div
+        className="md:col-span-5 rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl p-8 lg:p-10 transition-all duration-500 ease-out hover:-translate-y-2 hover:border-[#c1ff72] hover:shadow-[0_10px_30px_rgba(193,255,114,0.05)]">
+
+        <div className="flex items-center gap-3 mb-10">
+          <h2 className="text-xs uppercase tracking-[0.25em] text-white font-semibold">
+            Backend
+          </h2>
+
+          <div className="flex-1 h-px bg-white/10"></div>
+        </div>
+
+        <div className="flex flex-wrap gap-10">
+
+          {[
+          {
+          name: "Node.js",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+          },
+          {
+          name: "Express",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+          },
+          ].map((tech) => (
+          <div key={tech.name} className="flex flex-col items-center group">
+            <div
+              className="w-16 h-16 rounded-full border border-white/10 bg-black/40 flex items-center justify-center mb-3 transition-all duration-300 group-hover:border-[#c1ff72]/50 group-hover:shadow-[0_0_30px_rgba(193,255,114,0.15)]">
+              <img src={tech.img} alt={tech.name} className="w-10 h-10 object-contain invert" />
+            </div>
+
+            <span className="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-mono">
+              {tech.name}
+            </span>
+          </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Database */}
+      <div
+        className="md:col-span-4 rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl p-8 lg:p-10 transition-all duration-500 ease-out hover:-translate-y-2 hover:border-[#c1ff72] hover:shadow-[0_10px_30px_rgba(193,255,114,0.05)]">
+
+        <div className="flex items-center gap-3 mb-10">
+          <h2 className="text-xs uppercase tracking-[0.25em] text-white font-semibold">
+            Database
+          </h2>
+
+          <div className="flex-1 h-px bg-white/10"></div>
+        </div>
+
+        <div className="flex justify-around">
+
+          {[
+          {
+          name: "MongoDB",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+          },
+          {
+          name: "Firebase",
+          img: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
+          },
+          ].map((tech) => (
+          <div key={tech.name} className="flex flex-col items-center group">
+            <div
+              className="w-16 h-16 rounded-full border border-white/10 bg-black/40 flex items-center justify-center mb-3 transition-all duration-300 group-hover:border-[#c1ff72]/50 group-hover:shadow-[0_0_30px_rgba(193,255,114,0.15)]">
+              <img src={tech.img} alt={tech.name} className="w-10 h-10 object-contain" />
+            </div>
+
+            <span className="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-mono">
+              {tech.name}
+            </span>
+          </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Frameworks */}
+      <div
+        className="md:col-span-4 rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl p-8 lg:p-10 transition-all duration-500 ease-out hover:-translate-y-2 hover:border-[#c1ff72] hover:shadow-[0_10px_30px_rgba(193,255,114,0.05)]">
+
+        <div className="flex items-center gap-3 mb-10">
+          <h2 className="text-xs uppercase tracking-[0.25em] text-white font-semibold">
+            Frameworks
+          </h2>
+
+          <div className="flex-1 h-px bg-white/10"></div>
+        </div>
+
+        <div className="flex justify-around">
+
+          {[
+          {
+          name: "React",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+          },
+          {
+          name: "Next.js",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+          },
+          ].map((tech) => (
+          <div key={tech.name} className="flex flex-col items-center group">
+            <div
+              className="w-16 h-16 rounded-full border border-white/10 bg-black/40 flex items-center justify-center mb-3 transition-all duration-300 group-hover:border-[#c1ff72]/50 group-hover:shadow-[0_0_30px_rgba(193,255,114,0.15)]">
+              <img src={tech.img} alt={tech.name} className={`w-10 h-10 object-contain ${tech.name==="Next.js"
+                ? "invert" : "" }`} />
+            </div>
+
+            <span className="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-mono">
+              {tech.name}
+            </span>
+          </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Tools */}
+      <div
+        className="md:col-span-4 rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl p-8 lg:p-10 transition-all duration-500 ease-out hover:-translate-y-2 hover:border-[#c1ff72] hover:shadow-[0_10px_30px_rgba(193,255,114,0.05)]">
+
+        <div className="flex items-center gap-3 mb-10">
+          <h2 className="text-xs uppercase tracking-[0.25em] text-white font-semibold">
+            Tools
+          </h2>
+
+          <div className="flex-1 h-px bg-white/10"></div>
+        </div>
+
+        <div className="flex justify-around">
+
+          {[
+          {
+          name: "Git",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+          },
+          {
+          name: "GitHub",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+          },
+          {
+          name: "Figma",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+          },
+          ].map((tech) => (
+          <div key={tech.name} className="flex flex-col items-center group">
+            <div
+              className="w-14 h-14 rounded-full border border-white/10 bg-black/40 flex items-center justify-center mb-3 transition-all duration-300 group-hover:border-[#c1ff72]/50 group-hover:shadow-[0_0_30px_rgba(193,255,114,0.15)]">
+              <img src={tech.img} alt={tech.name} className={`w-8 h-8 object-contain ${tech.name==="GitHub" ? "invert"
+                : "" }`} />
+            </div>
+
+            <span className="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-mono">
+              {tech.name}
+            </span>
+          </div>
+          ))}
+        </div>
+      </div>
+
+    </div>
+
+    {/* Footer Actions */}
+    <footer
+      className="glass-card rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-8 mt-20 lg:mt-18 max-w-5xl mx-auto"
+      data-purpose="footer-section">
+      <div className="flex items-center gap-6">
+        <div
+          className="w-14 h-14 rounded-full bg-black/60 border border-[#c1ff72]/30 flex items-center justify-center shadow-[0_0_20px_rgba(193,255,114,0.1)]">
+          <svg className="w-7 h-7 text-[#c1ff72]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 003.24 3.03 14.98 14.98 0 009.39 15.15l-1.01 1.01m1.01-1.01a14.98 14.98 0 004.24-4.24M15.59 14.37l1.01 1.01m-1.01-1.01a14.98 14.98 0 00-4.24 4.24"
+              strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" />
+          </svg>
+        </div>
+        <div>
+          <h3 className="text-lg font-bold text-white tracking-tight">Let's <span
+              className="text-[#c1ff72]">Build</span> Together</h3>
+          <p className="text-xs text-gray-400">Open for collaborations and exciting <span
+              className="text-[#c1ff72]">projects</span>.</p>
+        </div>
+      </div>
+      <div className="flex flex-wrap items-center gap-4">
+        {/* Contact Handles */}
+        <a className="bg-black/40 border border-white/10 rounded-xl px-4 py-3 flex items-center gap-3 hover:border-[#c1ff72]/40 transition-colors group"
+          href="https://github.com/apurbochaki-lab">
+          <img alt="GitHub" className="w-5 h-5 opacity-70 group-hover:opacity-100"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqHGt-QVqz6L0IkuGwu4D69RNN1k-6ouCXU2pwONb2FedWJQu7eNxPwdMqhhmTM5fAJwhA0PvRrrTTZ2ad9fTuFsi-pfDu6iauZBIpMi4RhWilDdkuCB5czvYLYMG0EHQ9HzMzK1wk4P7187ArO7L4YZsWXXZykPjpK2FlX6_jlXCyiaLSuKdvIdxJGmebbWDAZbVElIr0Cz5BPoqBnJ0qCL1QdqVJF3EvQG1TM8OJkaKCl0TEN10igy8JeMm57FYtSIv3pqqA2SFZ" />
+          <span className="text-xs font-mono text-gray-300">/github_profile</span>
+        </a>
+        <a className="bg-black/40 border border-white/10 rounded-xl px-4 py-3 flex items-center gap-3 hover:border-[#c1ff72]/40 transition-colors group"
+          href="https://www.linkedin.com/in/apurbo-chaki8">
+          <img alt="LinkedIn" className="w-5 h-5 opacity-70 group-hover:opacity-100"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaIrs64eKArIW-vaAw82lyu3Z2ZKfqjILi2hwfa55mhpLU8hkdOgJBOGXv0_V5xl1guxnZ6SouLiFJ-fxzUax26rcfCjHVDEIBBQJdI4a34tbHngx-F7kQCFzLcATbb6OgY-vdbNFPK_2KSdmuh02XYhLDkYn4m9VP6Fm00P6PKkoE3hh0F-GxBN8UQOie3dbHLQUwRxJOJcdOSWevf5xkDR__0_qDwbp0tG2nXQS5BkZyaM6cPgriTdON1ojLAg90_nqx5a1ydDJp" />
+          <span className="text-xs font-mono text-gray-300">/linkedin_profile</span>
+        </a>
+        <a className="bg-black/40 border border-white/10 rounded-xl px-4 py-3 flex items-center gap-3 hover:border-[#c1ff72]/40 transition-colors group"
+          href="#">
+          <svg className="w-5 h-5 text-[#c1ff72] opacity-70 group-hover:opacity-100" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
+          </svg>
+          <span className="text-xs font-mono text-gray-300">apurbochaki4@gmail.com</span>
+        </a>
+      </div>
+    </footer>
+  </div>
+</section>
+
+// ================= TECH STACKS SECTION =================
+<section className="w-full bg-[#0a0a0a] relative overflow-hidden py-24 lg:py-24 px-5 md:px-20 data-grid">
+  {/* Scanline Effect */}
+  <div className="scanline pointer-events-none z-50"></div>
+
+  {/* Background Texture Overlay */}
+  <div className="absolute inset-0 overflow-hidden -z-10 pointer-events-none opacity-20 mix-blend-screen scale-110">
+    <img alt="background texture" className="w-full h-full object-cover"
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg_SX--LKDZSLOPmfUaPJ9g_8aj3E6jlLkvo65yb6VNWKaqS-R9wznwlLkyX0ly0cC5TyYo7OblREe0RHCfF4vDGVAx3AmDpFKX2ZD9mlhfRzUlhh8ag_AkD1DFeaUkWgKrBziaSPLK2VBry4Dxa_fzr9OkzFb0I2ioNbaJrEoTDcBYdmbD0Ky8XH9koNH60kwwUBV-CesCEdeiOyFGaETlmb7NEvJ68TPGml67oonu4CT6aMm35sFJlAvO5JmjeEK73Q1JKoeQzjh" />
+  </div>
+  <div
+    className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-transparent to-[#0a0a0a] -z-10 pointer-events-none">
+  </div>
+
+  <div className="max-w-[1280px] mx-auto relative z-10">
+    {/* Section Header Reimagined */}
+    <header className="mb-20 flex flex-col md:flex-row items-end justify-between gap-8 border-b border-white/5 pb-8">
+      <div className="relative pl-4">
+        <div className="absolute left-0 top-0 w-1 h-full bg-[#c1ff72]"></div>
+        <h2 className="font-display text-5xl md:text-7xl font-bold uppercase tracking-tighter text-white">
+          My <span className="text-[#c1ff72]">Education</span>
+        </h2>
+        <p className="font-mono text-[10px] sm:text-xs text-gray-400 mt-2 uppercase tracking-[0.4em]">Academic Path &
+          Certification Records</p>
+      </div>
+      <div className="flex flex-col items-end text-right font-mono text-[10px]">
+        <span className="text-[#c1ff72] opacity-50 uppercase">LOCATION: BANGLADESH</span>
+        <span className="text-[#c1ff72] uppercase mt-1">STATUS: CONTINUOUS LEARNING</span>
+      </div>
+    </header>
+
+    {/* Grid Cluster Layout */}
+    <div className="grid grid-cols-1 md:grid-cols-12 gap-6 relative min-h-[800px]">
+      {/* Decoration: Neural Link (Visual Element) */}
+      <div className="hidden lg:block absolute top-1/4 left-1/3 w-64 h-64 -z-10 float-anim opacity-40">
+        <img alt="floating module" className="w-full h-full object-contain rounded-full border border-[#c1ff72]/20"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs1czFdYsK01uaPDMjPob7hh_xOhiDpgVUCVkpTmMfJNFslR7A2VnffwtTIL2XqedLYow6XvprBjUDxqk2ijjPGi0IWY54PBv9QmOaz8GMpRVjPGQoVpnFKkwRiVCgI0Ruhkg1WgQz591e64r6-VVZN7DX6g2lLYBjhAFy4F8pDjBEmQKoPB5r-WmSoOAXVmiz7RiHr5hEoTRM_wMQo28gFS6Hvon4y_3KlmOikVW8PAsXhVOQiSH5dTDtvRdoImykrQjOdalFtVZ9" />
+      </div>
+
+      {/* Item 1: Undergraduate */}
+      <div className="md:col-span-6 h-fit">
+        <div className="glass-module rounded-xl relative overflow-hidden group p-4">
+          <div className="flex justify-between items-start mb-4">
+            <div
+              className="w-10 h-10 rounded-lg bg-[#c1ff72]/10 flex items-center justify-center text-[#c1ff72] border border-[#c1ff72]/20">
+              <span className="material-symbols-outlined text-lg">terminal</span>
+            </div>
+            <span
+              className="font-mono text-[9px] py-0.5 px-2 rounded-sm border border-[#c1ff72]/40 text-[#c1ff72] uppercase tracking-widest">SECONDARY</span>
+          </div>
+          <h3 className="font-sans text-xl md:text-2xl font-bold text-white mb-1">Secondary School Certificate (SSC)
+          </h3>
+          <p className="font-mono text-gray-400 mb-4 text-xs">Betkhoir High School, Bogura</p>
+          <div className="flex flex-wrap gap-4 pt-4 border-t border-white/5 font-mono text-[10px]">
+            <div className="flex flex-col">
+              <span className="text-gray-500">PERIOD</span>
+              <span className="text-[#c1ff72] text-[11px] mt-0.5">2018 — 2019</span>
+            </div>
+            <div className="flex flex-col">
+              <span className="text-gray-500">SCORE</span>
+              <span className="text-white text-[11px] mt-0.5">GPA: 5.00 / 5.00</span>
+            </div>
+          </div>
+        </div>
+        <div className="mt-4 p-4 border-l-2 border-[#c1ff72]/20">
+          <p className="font-mono text-[10px] text-gray-400 leading-relaxed uppercase">Built a strong academic
+            foundation with focus on discipline, consistency, and analytical learning.</p>
+        </div>
+      </div>
+
+      {/* Item 2: Certification (Shifted) */}
+      <div className="md:col-span-6 lg:col-start-8 md:mt-24 h-fit">
+        <div className="glass-module rounded-xl relative overflow-hidden group p-4">
+          <div className="flex justify-between items-start mb-4">
+            <div
+              className="w-10 h-10 rounded-lg bg-[#c1ff72]/10 flex items-center justify-center text-[#c1ff72] border border-[#c1ff72]/20">
+              <span className="material-symbols-outlined text-lg">architecture</span>
+            </div>
+            <span
+              className="font-mono text-[9px] py-0.5 px-2 rounded-sm border border-[#c1ff72]/40 text-[#c1ff72] uppercase tracking-widest">HIGHER
+              SECONDARY</span>
+          </div>
+          <h3 className="font-sans text-xl md:text-2xl font-bold text-white mb-1">Higher Secondary Certificate (HSC)
+          </h3>
+          <p className="font-mono text-gray-400 mb-4 text-xs">Govt. Begum Nurunnahar Tarkabagish Honours College</p>
+          <div className="flex flex-wrap gap-4 pt-4 border-t border-white/5 font-mono text-[10px]">
+            <div className="flex flex-col">
+              <span className="text-gray-500">PERIOD</span>
+              <span className="text-[#c1ff72] text-[11px] mt-0.5">2020 — 2022</span>
+            </div>
+            <div className="flex flex-col">
+              <span className="text-gray-500">SCORE</span>
+              <span className="text-white text-[11px] mt-0.5">GPA: 4.80 / 5.00</span>
+            </div>
+          </div>
+        </div>
+        <div className="mt-4 p-4 border-r-2 border-[#c1ff72]/20 text-right">
+          <p className="font-mono text-[10px] text-gray-400 leading-relaxed uppercase">Focused on academic growth,
+            problem-solving skills, and technology-driven learning.</p>
+        </div>
+      </div>
+
+      {/* Visual Core Element */}
+      <div className="hidden lg:flex md:col-span-3 items-center justify-center pointer-events-none relative">
+        <div className="w-16 h-16 rounded-full border border-[#c1ff72]/30 animate-ping absolute"></div>
+        <div className="w-4 h-4 bg-[#c1ff72] rounded-full shadow-[0_0_20px_#c1ff72] z-10"></div>
+      </div>
+
+      {/* Item 3: Post-Grad */}
+      <div className="md:col-span-7 lg:col-start-2 lg:-mt-12 h-fit">
+        <div className="glass-module rounded-xl relative overflow-hidden group p-4">
+          <div className="flex justify-between items-start mb-4">
+            <div
+              className="w-10 h-10 rounded-lg bg-[#c1ff72]/10 flex items-center justify-center text-[#c1ff72] border border-[#c1ff72]/20">
+              <span className="material-symbols-outlined text-lg">biotech</span>
+            </div>
+            <span
+              className="font-mono text-[9px] py-0.5 px-2 rounded-sm border border-[#c1ff72]/40 text-[#c1ff72] uppercase tracking-widest">UNDERGRADUATE</span>
+          </div>
+          <h3 className="font-sans text-xl md:text-2xl font-bold text-white mb-1">Bachelor of Social Science (BSS)</h3>
+          <p className="font-mono text-gray-400 mb-4 text-xs">Govt. Azizul Haque College, Bogura</p>
+          <div className="flex flex-wrap gap-4 pt-4 border-t border-white/5 font-mono text-[10px]">
+            <div className="flex flex-col">
+              <span className="text-gray-500">PERIOD</span>
+              <span className="text-[#c1ff72] text-[11px] mt-0.5">Education Running</span>
+            </div>
+
+          </div>
+        </div>
+        <div className="mt-4 p-4 border-l-2 border-[#c1ff72]/20">
+          <p className="font-mono text-[10px] text-gray-400 leading-relaxed uppercase">Continuing higher education while
+            building practical skills in frontend development and modern web technologies.</p>
+        </div>
+      </div>
+
+      {/* Small Floating Data Module */}
+      <div className="hidden md:block md:col-span-5 lg:col-span-3 h-fit lg:mt-32">
+        <div className="p-6 border border-white/10 bg-white/5 rounded-xl backdrop-blur-md">
+          <div className="text-[9px] font-mono text-[#c1ff72]/50 mb-4 tracking-[0.3em]">ENVIRONMENT_DATA</div>
+          <div className="flex items-center gap-3">
+            <div className="w-2 h-2 rounded-full bg-[#c1ff72] animate-pulse"></div>
+            <span className="font-mono text-[10px] text-gray-300">ZURICH LABS // ONLINE</span>
+          </div>
+          <div className="mt-6 opacity-20">
+            <img alt="Engineering Lab" className="w-full h-24 object-cover grayscale rounded-lg"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb3mxEaAg1D5l31S7E79iwSBmz98bdkTURVkp0hZfc1UCJfh4WwwIG58yh4faS-XXqtcwvgQIwjHyYSoWFqhUiE0gaezelrGtgZucqDfWmWVrmEK7PTAdgnq_R4yRhw1ZRc7hWnUGmCxq62BaRYE4vzWWSYrSBzhgZgQD9ip4yK0avXWnw9DAdY4xS2-PjTyc6IVx77PhupYcDH3_rOMQ819isbwb10U9KAIsHIkA5uXsj1u1XtEWqLPn63BkB0QXZbEMmGca0ZKY1" />
+          </div>
+          <div className="mt-4 font-mono text-[8px] text-gray-500 text-center">STUDY_ENVIRONMENT_ARCHIVE_01</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+// ================= FOOTER SECTION =================
+<footer className="relative w-full border-t border-[#c1ff72]/10 overflow-hidden">
+
+  {/* Main Footer Container */}
+  <div className="w-full bg-[rgba(12,12,12,0.88)] backdrop-blur-2xl relative z-10">
+
+    <div className='max-w-[1400px] mx-auto'>
+      {/* Glass Footer Panel */}
+      <div className="w-full bg-[rgba(12,12,12,0.88)] backdrop-blur-2xl px-6 md:px-10 lg:px-14 py-12 md:py-16">
+
+        {/* Top Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10">
+
+          {/* COLUMN 1 */}
+          <div className="lg:col-span-4 flex flex-col gap-8">
+
+            <div>
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
+                <span className="text-white">Apurbo</span>
+                <span className="text-[#c1ff72]"> Chaki</span>
+              </h2>
+
+              <p className="font-mono text-xs text-[#c1ff72] mt-2 tracking-[0.25em] uppercase">
+                Frontend Developer & UI Designer
+              </p>
+            </div>
+
+            <p className="text-gray-400 max-w-md leading-relaxed text-sm">
+              Building modern, responsive, and user-focused web experiences
+              with clean frontend engineering and premium UI design.
+            </p>
+
+            {/* Highlight Box */}
+            <div className="bg-white/[0.03] border border-white/10 rounded-2xl p-4 flex items-center gap-4 w-fit pr-8">
+              <div className="h-11 w-11 rounded-xl flex items-center justify-center bg-[#c1ff72]/10 text-[#c1ff72]">
+                <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>
+                  auto_awesome
+                </span>
+              </div>
+
+              <span className="text-white font-medium text-sm">
+                Crafting Interfaces That Feel Premium.
+              </span>
+            </div>
+          </div>
+
+          {/* COLUMN 2 */}
+          <div className="lg:col-span-4 flex flex-col gap-8">
+
+            <h3 className="font-mono text-xs text-[#c1ff72] tracking-[0.25em] flex items-center gap-2 uppercase">
+              <span className="material-symbols-outlined text-sm">
+                alternate_email
+              </span>
+              Quick Contact
+            </h3>
+
+            <div className="space-y-4">
+
+              {/* Mail */}
+              <a href="mailto:apurbochaki4@gmail.com" className="flex items-center gap-4 group">
+                <div
+                  className="w-10 h-10 flex items-center justify-center rounded-xl bg-white/[0.04] border border-white/5">
+                  <span
+                    className="material-symbols-outlined text-[18px] text-gray-400 group-hover:text-[#c1ff72] transition-colors">
+                    mail
+                  </span>
+                </div>
+
+                <span className="text-gray-400 group-hover:text-[#c1ff72] transition-colors text-sm">
+                  apurbochaki4@gmail.com
+                </span>
+              </a>
+
+              {/* Phone */}
+              <div className="flex items-center gap-4">
+                <div
+                  className="w-10 h-10 flex items-center justify-center rounded-xl bg-white/[0.04] border border-white/5">
+                  <span className="material-symbols-outlined text-[18px] text-gray-400">
+                    call
+                  </span>
+                </div>
+
+                <span className="text-gray-400 text-sm">
+                  +8801853-253943
+                </span>
+              </div>
+
+              {/* Location */}
+              <div className="flex items-center gap-4">
+                <div
+                  className="w-10 h-10 flex items-center justify-center rounded-xl bg-white/[0.04] border border-white/5">
+                  <span className="material-symbols-outlined text-[18px] text-gray-400">
+                    location_on
+                  </span>
+                </div>
+
+                <span className="text-gray-400 text-sm">
+                  Bogura, Rajshahi, Bangladesh
+                </span>
+              </div>
+            </div>
+
+            {/* Resume Button */}
+            <a href="#"
+              className="mt-2 flex items-center justify-between p-5 rounded-2xl bg-[#c1ff72] text-black font-bold hover:shadow-[0_0_25px_rgba(193,255,114,0.25)] transition-all duration-300 w-full md:w-[280px]">
+              <div className="flex items-center gap-3">
+                <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>
+                  description
+                </span>
+
+                <span>View Resume</span>
+              </div>
+
+              <span className="material-symbols-outlined">
+                open_in_new
+              </span>
+            </a>
+          </div>
+
+          {/* COLUMN 3 */}
+          <div className="lg:col-span-4 flex flex-col gap-4">
+
+            <h3 className="font-mono text-xs text-[#c1ff72] tracking-[0.25em] flex items-center gap-2 mb-2 uppercase">
+              <span className="material-symbols-outlined text-sm">
+                groups
+              </span>
+              Connect With Me
+            </h3>
+
+            {/* CARD */}
+            <Link href="https://github.com/apurbochaki-lab"
+              className="group flex items-center justify-between p-5 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-[#c1ff72]/30 hover:bg-white/[0.05] transition-all duration-300">
+            <div className="flex items-center gap-4">
+
+              <div
+                className="w-11 h-11 rounded-full flex items-center justify-center bg-black/40 text-[#c1ff72] group-hover:scale-110 transition-transform duration-300">
+                <span className="material-symbols-outlined">
+                  code
+                </span>
+              </div>
+
+              <div>
+                <h4 className="text-white font-medium text-sm">
+                  GitHub Repository
+                </h4>
+
+                <p className="text-xs text-gray-400">
+                  Explore my source code
+                </p>
+              </div>
+            </div>
+
+            <span
+              className="material-symbols-outlined text-gray-400 group-hover:text-[#c1ff72] group-hover:translate-x-1 transition-all">
+              arrow_forward
+            </span>
+            </Link>
+
+            {/* CARD */}
+            <Link href="https://www.linkedin.com/in/apurbo-chaki8"
+              className="group flex items-center justify-between p-5 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-[#c1ff72]/30 hover:bg-white/[0.05] transition-all duration-300">
+            <div className="flex items-center gap-4">
+
+              <div
+                className="w-11 h-11 rounded-full flex items-center justify-center bg-black/40 text-[#c1ff72] group-hover:scale-110 transition-transform duration-300">
+                <span className="material-symbols-outlined">
+                  work
+                </span>
+              </div>
+
+              <div>
+                <h4 className="text-white font-medium text-sm">
+                  LinkedIn Network
+                </h4>
+
+                <p className="text-xs text-gray-400">
+                  Professional connection
+                </p>
+              </div>
+            </div>
+
+            <span
+              className="material-symbols-outlined text-gray-400 group-hover:text-[#c1ff72] group-hover:translate-x-1 transition-all">
+              arrow_forward
+            </span>
+            </Link>
+
+            {/* CARD */}
+            <a href="#"
+              className="group flex items-center justify-between p-5 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-[#c1ff72]/30 hover:bg-white/[0.05] transition-all duration-300">
+              <div className="flex items-center gap-4">
+
+                <div
+                  className="w-11 h-11 rounded-full flex items-center justify-center bg-black/40 text-[#c1ff72] group-hover:scale-110 transition-transform duration-300">
+                  <span className="material-symbols-outlined">
+                    person
+                  </span>
+                </div>
+
+                <div>
+                  <h4 className="text-white font-medium text-sm">
+                    Facebook Profile
+                  </h4>
+
+                  <p className="text-xs text-gray-400">
+                    Personal updates
+                  </p>
+                </div>
+              </div>
+
+              <span
+                className="material-symbols-outlined text-gray-400 group-hover:text-[#c1ff72] group-hover:translate-x-1 transition-all">
+                arrow_forward
+              </span>
+            </a>
+          </div>
+        </div>
+
+        {/* FEATURE STRIP */}
+        <div
+          className="mt-14 grid grid-cols-1 md:grid-cols-3 rounded-[1.7rem] bg-black/40 border border-white/10 overflow-hidden divide-y md:divide-y-0 md:divide-x divide-white/10">
+
+          {/* ITEM */}
+          <div className="p-6 flex items-start gap-4 hover:bg-white/[0.03] transition-colors group">
+
+            <div
+              className="p-3 rounded-full bg-[#c1ff72]/10 text-[#c1ff72] group-hover:scale-110 transition-transform flex-shrink-0">
+              <span className="material-symbols-outlined">
+                devices
+              </span>
+            </div>
+
+            <div>
+              <h5 className="text-white font-medium">
+                Responsive Design
+              </h5>
+
+              <p className="text-sm text-gray-400 mt-1">
+                Perfect viewing on any device resolution.
+              </p>
+            </div>
+          </div>
+
+          {/* ITEM */}
+          <div className="p-6 flex items-start gap-4 hover:bg-white/[0.03] transition-colors group">
+
+            <div
+              className="p-3 rounded-full bg-[#c1ff72]/10 text-[#c1ff72] group-hover:scale-110 transition-transform flex-shrink-0">
+              <span className="material-symbols-outlined">
+                terminal
+              </span>
+            </div>
+
+            <div>
+              <h5 className="text-white font-medium">
+                Clean Code
+              </h5>
+
+              <p className="text-sm text-gray-400 mt-1">
+                Maintainable and performant architecture.
+              </p>
+            </div>
+          </div>
+
+          {/* ITEM */}
+          <div className="p-6 flex items-start gap-4 hover:bg-white/[0.03] transition-colors group">
+
+            <div
+              className="p-3 rounded-full bg-[#c1ff72]/10 text-[#c1ff72] group-hover:scale-110 transition-transform flex-shrink-0">
+              <span className="material-symbols-outlined">
+                design_services
+              </span>
+            </div>
+
+            <div>
+              <h5 className="text-white font-medium">
+                Modern UI/UX
+              </h5>
+
+              <p className="text-sm text-gray-400 mt-1">
+                Immersive aesthetics and smart workflows.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* COPYRIGHT */}
+        <div
+          className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 mt-8 border-t border-white/10">
+
+          <div className="text-sm text-gray-400 font-mono">
+            © 2025{' '}
+            <span className="text-[#c1ff72]">
+              Apurbo Chaki.
+            </span>{' '}
+            All rights reserved.
+          </div>
+
+          <div className="text-sm text-gray-500 italic">
+            Design. Develop. Deliver.
+          </div>
+
+          <div className="flex items-center gap-2">
+            <span className="text-sm text-gray-400">
+              Built with passion
+            </span>
+
+            <span className="material-symbols-outlined text-[#c1ff72] text-[16px]" style={{
+              fontVariationSettings: "'FILL' 1" }}>
+              favorite
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+

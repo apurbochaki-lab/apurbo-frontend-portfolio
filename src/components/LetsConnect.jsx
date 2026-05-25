@@ -69,27 +69,27 @@ const LetsConnect = () => {
                                 <div className="group">
                                     <span className="block font-mono text-[10px] text-[#c1ff72] tracking-[0.2em] mb-2">INQUIRIES</span>
                                     <a className="text-xl font-bold text-white hover:text-[#c1ff72] transition-colors duration-300" href="mailto:hello@architect-core.io">
-                                        hello@architect-core.io
+                                        apurbokumarchaki@gmail.com
                                     </a>
                                 </div>
                                 {/* Direct Contacts */}
                                 <div className="space-y-4">
                                     <div className="flex items-center gap-3">
                                         <span className="material-symbols-outlined text-[#c1ff72]">call</span>
-                                        <span className="font-mono text-gray-300 text-sm">+1 (415) 802-0192</span>
+                                        <span className="font-mono text-gray-300 text-sm">+8801853-253943</span>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <span className="material-symbols-outlined text-[#c1ff72]">location_on</span>
-                                        <span className="font-mono text-gray-300 text-sm">San Francisco, CA // Remote</span>
+                                        <span className="font-mono text-gray-300 text-sm">Bogura, Rajshahi, Bangladesh</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         {/* Socials */}
                         <div className="mt-16 pt-8 border-t border-white/5 flex gap-8">
-                            <a className="font-mono text-[11px] text-gray-400 hover:text-[#c1ff72] tracking-[0.25em] transition-colors" href="#">GITHUB</a>
-                            <a className="font-mono text-[11px] text-gray-400 hover:text-[#c1ff72] tracking-[0.25em] transition-colors" href="#">LINKEDIN</a>
-                            <a className="font-mono text-[11px] text-gray-400 hover:text-[#c1ff72] tracking-[0.25em] transition-colors" href="#">TWITTER</a>
+                            <a className="font-mono text-[11px] text-gray-400 hover:text-[#c1ff72] tracking-[0.25em] transition-colors" href="https://github.com/apurbochaki-lab">GITHUB</a>
+                            <a className="font-mono text-[11px] text-gray-400 hover:text-[#c1ff72] tracking-[0.25em] transition-colors" href="https://www.linkedin.com/in/apurbo-chaki8">LINKEDIN</a>
+                            {/* <a className="font-mono text-[11px] text-gray-400 hover:text-[#c1ff72] tracking-[0.25em] transition-colors" href="#">TWITTER</a> */}
                         </div>
                     </div>
 

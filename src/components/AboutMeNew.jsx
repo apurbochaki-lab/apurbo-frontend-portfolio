@@ -200,10 +200,11 @@ const AboutMeNew = () => {
                     {/* Buttons */}
                     <div className='flex flex-wrap gap-4 pt-4'>
 
-                        <button className='flex items-center gap-3 rounded-xl bg-[#c1ff72] px-8 py-4 font-bold text-black shadow-[0_0_24px_rgba(193,255,114,0.2)] transition-all duration-300 hover:scale-105 active:scale-95'>
+                        <a href="/Apurbo's_Resume.pdf" download="Apurbo's_Resume.pdf"
+                        className='flex items-center gap-3 rounded-xl bg-[#c1ff72] px-8 py-4 font-bold text-black shadow-[0_0_24px_rgba(193,255,114,0.2)] transition-all duration-300 hover:scale-105 active:scale-95'>
                             <Download size={20} />
                             <span>DOWNLOAD CV</span>
-                        </button>
+                        </a>
 
                         <button className='group rounded-xl border border-white/20 p-4 transition-all duration-300 hover:border-[#c1ff72]'>
                             <ArrowRight className='text-white transition-colors group-hover:text-[#c1ff72]' />
