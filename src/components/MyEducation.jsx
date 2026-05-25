@@ -50,8 +50,8 @@ const MyEducation = () => {
                         <p className="font-mono text-[10px] sm:text-xs text-gray-400 mt-2 uppercase tracking-[0.4em]">Academic Path & Certification Records</p>
                     </div>
                     <div className="flex flex-col items-end text-right font-mono text-[10px]">
-                        <span className="text-[#c1ff72] opacity-50 uppercase">Location: GLOBAL_SYSTEMS</span>
-                        <span className="text-[#c1ff72] uppercase mt-1">Status: CONTINUOUS_LEARNING</span>
+                        <span className="text-[#c1ff72] opacity-50 uppercase">LOCATION: BANGLADESH</span>
+                        <span className="text-[#c1ff72] uppercase mt-1">STATUS: CONTINUOUS LEARNING</span>
                     </div>
                 </header>
 
@@ -73,23 +73,23 @@ const MyEducation = () => {
                                 <div className="w-10 h-10 rounded-lg bg-[#c1ff72]/10 flex items-center justify-center text-[#c1ff72] border border-[#c1ff72]/20">
                                     <span className="material-symbols-outlined text-lg">terminal</span>
                                 </div>
-                                <span className="font-mono text-[9px] py-0.5 px-2 rounded-sm border border-[#c1ff72]/40 text-[#c1ff72] uppercase tracking-widest">Undergraduate</span>
+                                <span className="font-mono text-[9px] py-0.5 px-2 rounded-sm border border-[#c1ff72]/40 text-[#c1ff72] uppercase tracking-widest">SECONDARY</span>
                             </div>
-                            <h3 className="font-sans text-xl md:text-2xl font-bold text-white mb-1">B.Sc. Computer Science & Engineering</h3>
-                            <p className="font-mono text-gray-400 mb-4 text-xs">Institute of Advanced Technology, Zurich</p>
+                            <h3 className="font-sans text-xl md:text-2xl font-bold text-white mb-1">Secondary School Certificate (SSC)</h3>
+                            <p className="font-mono text-gray-400 mb-4 text-xs">Betkhoir High School, Bogura</p>
                             <div className="flex flex-wrap gap-4 pt-4 border-t border-white/5 font-mono text-[10px]">
                                 <div className="flex flex-col">
                                     <span className="text-gray-500">PERIOD</span>
-                                    <span className="text-[#c1ff72] text-[11px] mt-0.5">2018 — 2022</span>
+                                    <span className="text-[#c1ff72] text-[11px] mt-0.5">2018 — 2019</span>
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="text-gray-500">SCORE</span>
-                                    <span className="text-white text-[11px] mt-0.5">GPA: 3.9/4.0</span>
+                                    <span className="text-white text-[11px] mt-0.5">GPA: 5.00 / 5.00</span>
                                 </div>
                             </div>
                         </div>
                         <div className="mt-4 p-4 border-l-2 border-[#c1ff72]/20">
-                            <p className="font-mono text-[10px] text-gray-400 leading-relaxed uppercase">SPECIALIZATION IN DISTRIBUTED SYSTEMS AND HIGH-PERFORMANCE COMPUTING ARCHITECTURES.</p>
+                            <p className="font-mono text-[10px] text-gray-400 leading-relaxed uppercase">Built a strong academic foundation with focus on discipline, consistency, and analytical learning.</p>
                         </div>
                     </div>
 
@@ -100,23 +100,23 @@ const MyEducation = () => {
                                 <div className="w-10 h-10 rounded-lg bg-[#c1ff72]/10 flex items-center justify-center text-[#c1ff72] border border-[#c1ff72]/20">
                                     <span className="material-symbols-outlined text-lg">architecture</span>
                                 </div>
-                                <span className="font-mono text-[9px] py-0.5 px-2 rounded-sm border border-[#c1ff72]/40 text-[#c1ff72] uppercase tracking-widest">Certification</span>
+                                <span className="font-mono text-[9px] py-0.5 px-2 rounded-sm border border-[#c1ff72]/40 text-[#c1ff72] uppercase tracking-widest">HIGHER SECONDARY</span>
                             </div>
-                            <h3 className="font-sans text-xl md:text-2xl font-bold text-white mb-1">Cloud Infrastructure Architect</h3>
-                            <p className="font-mono text-gray-400 mb-4 text-xs">Amazon Web Services Academy</p>
+                            <h3 className="font-sans text-xl md:text-2xl font-bold text-white mb-1">Higher Secondary Certificate (HSC)</h3>
+                            <p className="font-mono text-gray-400 mb-4 text-xs">Govt. Begum Nurunnahar Tarkabagish Honours College</p>
                             <div className="flex flex-wrap gap-4 pt-4 border-t border-white/5 font-mono text-[10px]">
                                 <div className="flex flex-col">
-                                    <span className="text-gray-500">ISSUED</span>
-                                    <span className="text-[#c1ff72] text-[11px] mt-0.5">2023</span>
+                                    <span className="text-gray-500">PERIOD</span>
+                                    <span className="text-[#c1ff72] text-[11px] mt-0.5">2020 — 2022</span>
                                 </div>
                                 <div className="flex flex-col">
-                                    <span className="text-gray-500">VERIFICATION</span>
-                                    <span className="text-white text-[11px] mt-0.5">#AWS-PRO-9812</span>
+                                    <span className="text-gray-500">SCORE</span>
+                                    <span className="text-white text-[11px] mt-0.5">GPA: 4.80 / 5.00</span>
                                 </div>
                             </div>
                         </div>
                         <div className="mt-4 p-4 border-r-2 border-[#c1ff72]/20 text-right">
-                            <p className="font-mono text-[10px] text-gray-400 leading-relaxed uppercase">MASTERING SERVERLESS ARCHITECTURES, KUBERNETES ORCHESTRATION, AND GLOBAL CDN DEPLOYMENTS.</p>
+                            <p className="font-mono text-[10px] text-gray-400 leading-relaxed uppercase">Focused on academic growth, problem-solving skills, and technology-driven learning.</p>
                         </div>
                     </div>
 
@@ -133,23 +133,20 @@ const MyEducation = () => {
                                 <div className="w-10 h-10 rounded-lg bg-[#c1ff72]/10 flex items-center justify-center text-[#c1ff72] border border-[#c1ff72]/20">
                                     <span className="material-symbols-outlined text-lg">biotech</span>
                                 </div>
-                                <span className="font-mono text-[9px] py-0.5 px-2 rounded-sm border border-[#c1ff72]/40 text-[#c1ff72] uppercase tracking-widest">Post-Grad</span>
+                                <span className="font-mono text-[9px] py-0.5 px-2 rounded-sm border border-[#c1ff72]/40 text-[#c1ff72] uppercase tracking-widest">UNDERGRADUATE</span>
                             </div>
-                            <h3 className="font-sans text-xl md:text-2xl font-bold text-white mb-1">Machine Learning Specialization</h3>
-                            <p className="font-mono text-gray-400 mb-4 text-xs">Stanford Center for Professional Development</p>
+                            <h3 className="font-sans text-xl md:text-2xl font-bold text-white mb-1">Bachelor of Social Science (BSS)</h3>
+                            <p className="font-mono text-gray-400 mb-4 text-xs">Govt. Azizul Haque College, Bogura</p>
                             <div className="flex flex-wrap gap-4 pt-4 border-t border-white/5 font-mono text-[10px]">
                                 <div className="flex flex-col">
-                                    <span className="text-gray-500">DURATION</span>
-                                    <span className="text-[#c1ff72] text-[11px] mt-0.5">2022 — 2023</span>
+                                    <span className="text-gray-500">PERIOD</span>
+                                    <span className="text-[#c1ff72] text-[11px] mt-0.5">Education Running</span>
                                 </div>
-                                <div className="flex flex-col">
-                                    <span className="text-gray-500">MODULE</span>
-                                    <span className="text-white text-[11px] mt-0.5">DEEP LEARNING FLUX</span>
-                                </div>
+                                
                             </div>
                         </div>
                         <div className="mt-4 p-4 border-l-2 border-[#c1ff72]/20">
-                            <p className="font-mono text-[10px] text-gray-400 leading-relaxed uppercase">FOCUS ON NEURAL NETWORKS, COMPUTER VISION, AND PROBABILISTIC GRAPHICAL MODELS.</p>
+                            <p className="font-mono text-[10px] text-gray-400 leading-relaxed uppercase">Continuing higher education while building practical skills in frontend development and modern web technologies.</p>
                         </div>
                     </div>
 

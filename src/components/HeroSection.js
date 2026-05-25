@@ -42,9 +42,9 @@ export default function HeroSection() {
               <div className="relative z-10 bg-[#141414] rounded-[2.5rem] p-6 profile-card-glow overflow-hidden">
                 <div className="aspect-[4/5] rounded-3xl overflow-hidden relative mb-8">
                   <img
-                    alt="Alexander Isak Portrait"
+                    alt="Apurbo Chaki's Portrait"
                     className="w-full h-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYL7NDzj4DOPKxjunzF9WLh7GtJBXdQABzutGGl7i4uZFrmIm-pSvJTqoFyYhA66VezWAYrZW8kfanpCwnrOCW73GoGJU0nRar4vASh2FmfHX2yxUnKa0kKQDLffwHxwx6VuKhRdoIfZmiPvBWdY4oKNPISW82uCHN86GvlX5OenAOsjZQMQFvnTwQ-xAo47mYmpI-TL2cyhOoNY4LDOOw7TrdhMHJ9vyWa8TsYGN7IIqe80rqkU2FhSvtI2W_UJ5lTb-viLfwTY0F"
+                    src="https://i.ibb.co.com/pvvybtGW/Apurbo-Chaki.png"
                   />
                   {/* Overlay Elements */}
                   <div className="absolute top-4 left-4 w-10 h-10 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20">
@@ -76,9 +76,9 @@ export default function HeroSection() {
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <h3 className="text-2xl font-bold">Hey, I'm Isak</h3>
-                  <p className="text-zinc-400 text-sm leading-relaxed">
-                    I help startups grow with smart design and no-code development based in Cupertino, CA.
+                  <h3 className="text-2xl font-bold">Hey, I’m Apurbo</h3>
+                  <p className="text-zinc-400 text-sm leading-relaxed font-medium">
+                    I create clean, responsive, and user-focused websites that combine modern UI with smooth performance helping startups, brands, and businesses.
                   </p>
                   <div className="flex flex-wrap items-center gap-3 pt-4">
                     <button className="flex items-center gap-2 bg-brand text-dark px-6 py-3 rounded-full font-bold text-sm hover:scale-105 transition-transform cursor-pointer">
@@ -117,7 +117,7 @@ export default function HeroSection() {
             <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] opacity-40 mix-blend-screen pointer-events-none">
               <img
                 alt="Futuristic Wave"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain opacity-30"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKW5yBCnJiPjhLH87iqMk50EhXThjbDDnEqgbaDMY6Gr-eEOwxJmhyP1gG6WUH_qASw33mmRAqu2qbKKusPnDvivqpHGq1Q93nopL6VS3UYkfNoXh9TrzEa-Ctp77AqEew1TnHxcb3vmxRe7HQPSPJYknLM3YiCe2jjH8p-TMkJuD1BA33udIv9_jN3rZTqoNifeQnay1hPe_Lp2oylnGE5EF3kXrE24bnLWW-MVPdlpyWSKvCfdm7zye6w27ZCEH_L8hJ45029fNM"
               />
             </div>
@@ -126,15 +126,15 @@ export default function HeroSection() {
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden border border-white/20">
                   <img
-                    alt="Alexander Isak"
+                    alt="Apurbo Chaki"
                     className="w-full h-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYL7NDzj4DOPKxjunzF9WLh7GtJBXdQABzutGGl7i4uZFrmIm-pSvJTqoFyYhA66VezWAYrZW8kfanpCwnrOCW73GoGJU0nRar4vASh2FmfHX2yxUnKa0kKQDLffwHxwx6VuKhRdoIfZmiPvBWdY4oKNPISW82uCHN86GvlX5OenAOsjZQMQFvnTwQ-xAo47mYmpI-TL2cyhOoNY4LDOOw7TrdhMHJ9vyWa8TsYGN7IIqe80rqkU2FhSvtI2W_UJ5lTb-viLfwTY0F"
+                    src="https://i.ibb.co.com/pvvybtGW/Apurbo-Chaki.png"
                   />
                 </div>
                 <div>
-                  <p className="font-bold text-sm">Alexander Isak</p>
+                  <p className="font-bold text-sm">Apurbo Chaki</p>
                   <p className="text-zinc-500 text-[10px] uppercase tracking-widest font-semibold">
-                    UI Designer &amp; No-Code Developer
+                    Frontend Developer &amp; Creative UI Engineer
                   </p>
                 </div>
               </div>
@@ -144,12 +144,13 @@ export default function HeroSection() {
               </div>
             </div>
             {/* Main Headline */}
+
             <h1 className="text-5xl md:text-7xl font-extrabold leading-[1.1] mb-12" data-purpose="hero-headline">
-              I'm building{" "}
-              <span className="px-4 py-1 bg-brand text-dark rounded-full inline-block">websites</span>
+              I build fast{" "}
+              <span className="px-4 py-1 bg-brand text-dark rounded-full inline-block">modern</span>
               <br />
               <span className="inline-block px-4 py-1 border-2 border-brand text-brand rounded-full mt-2">
-                &amp; brands
+               websites
               </span>{" "}
               that people remember
             </h1>
@@ -183,41 +184,16 @@ export default function HeroSection() {
             {/* Statistics */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-white/5 pt-12">
               <div>
-                <p className="text-4xl font-bold mb-1">10+</p>
+                <p className="text-4xl font-bold mb-1">1+</p>
                 <p className="text-zinc-500 text-xs font-medium uppercase tracking-wider">Years of experience</p>
               </div>
               <div>
-                <p className="text-4xl font-bold mb-1">6x</p>
-                <p className="text-zinc-500 text-xs font-medium uppercase tracking-wider">Industry Awards</p>
+                <p className="text-4xl font-bold mb-1">10+</p>
+                <p className="text-zinc-500 text-xs font-medium uppercase tracking-wider">Modern Projects</p>
               </div>
             </div>
             {/* Client Section */}
-            <div className="mt-16 border-t border-white/5 pt-8">
-              <div className="flex items-center gap-2 mb-6 text-[10px] text-zinc-500 font-bold uppercase tracking-[0.2em]">
-                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                  />
-                  <path
-                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                  />
-                </svg>
-                Our clients (2015-25©)
-              </div>
-              <div className="flex flex-wrap items-center gap-12 opacity-40 hover:opacity-70 transition-opacity duration-500">
-                <span className="text-lg font-black tracking-tighter italic">Logoipsum</span>
-                <div className="flex items-center gap-2 font-black italic">
-                  <div className="w-4 h-4 bg-white rounded-sm"></div> Logoipsum
-                </div>
-                <span className="text-lg font-bold tracking-widest">LOGOIPSUM</span>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>

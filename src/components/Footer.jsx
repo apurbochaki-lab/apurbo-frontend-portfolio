@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react'
 import "../app/globals.css";
+import Link from 'next/link';
 
 const Footer = () => {
 
@@ -97,7 +98,7 @@ const Footer = () => {
 
                                     {/* Mail */}
                                     <a
-                                        href="mailto:apurbochaki11@gmail.com"
+                                        href="mailto:apurbochaki4@gmail.com"
                                         className="flex items-center gap-4 group"
                                     >
                                         <div className="w-10 h-10 flex items-center justify-center rounded-xl bg-white/[0.04] border border-white/5">
@@ -107,7 +108,7 @@ const Footer = () => {
                                         </div>
 
                                         <span className="text-gray-400 group-hover:text-[#c1ff72] transition-colors text-sm">
-                                            apurbochaki11@gmail.com
+                                            apurbochaki4@gmail.com
                                         </span>
                                     </a>
 
@@ -120,7 +121,7 @@ const Footer = () => {
                                         </div>
 
                                         <span className="text-gray-400 text-sm">
-                                            01874760967
+                                            +8801853-253943
                                         </span>
                                     </div>
 
@@ -133,7 +134,7 @@ const Footer = () => {
                                         </div>
 
                                         <span className="text-gray-400 text-sm">
-                                            Naogaon, Rajshahi, Bangladesh
+                                            Bogura, Rajshahi, Bangladesh
                                         </span>
                                     </div>
                                 </div>
@@ -171,8 +172,8 @@ const Footer = () => {
                                 </h3>
 
                                 {/* CARD */}
-                                <a
-                                    href="#"
+                                <Link
+                                    href="https://github.com/apurbochaki-lab"
                                     className="group flex items-center justify-between p-5 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-[#c1ff72]/30 hover:bg-white/[0.05] transition-all duration-300"
                                 >
                                     <div className="flex items-center gap-4">
@@ -197,11 +198,11 @@ const Footer = () => {
                                     <span className="material-symbols-outlined text-gray-400 group-hover:text-[#c1ff72] group-hover:translate-x-1 transition-all">
                                         arrow_forward
                                     </span>
-                                </a>
+                                </Link>
 
                                 {/* CARD */}
-                                <a
-                                    href="#"
+                                <Link
+                                    href="https://www.linkedin.com/in/apurbo-chaki8"
                                     className="group flex items-center justify-between p-5 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-[#c1ff72]/30 hover:bg-white/[0.05] transition-all duration-300"
                                 >
                                     <div className="flex items-center gap-4">
@@ -226,7 +227,7 @@ const Footer = () => {
                                     <span className="material-symbols-outlined text-gray-400 group-hover:text-[#c1ff72] group-hover:translate-x-1 transition-all">
                                         arrow_forward
                                     </span>
-                                </a>
+                                </Link>
 
                                 {/* CARD */}
                                 <a

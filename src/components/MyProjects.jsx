@@ -8,10 +8,10 @@ const MyProjects = () => {
         const handleMouseMove = (e) => {
             const glows = document.querySelectorAll('.radial-glow-proj')
             if (glows.length < 2) return
-            
+
             const x = e.clientX
             const y = e.clientY
-            
+
             // Adjust the first glow slightly based on mouse pos
             glows[0].style.transform = `translate(${x / 50}px, ${y / 50}px)`
             glows[1].style.transform = `translate(${-x / 50}px, ${-y / 50}px)`
@@ -63,7 +63,7 @@ const MyProjects = () => {
                         MY <span className="text-[#c1ff72] neon-glow-text">PROJECTS</span>
                     </h2>
                     <p className="max-w-2xl text-lg text-gray-400 mb-10 leading-relaxed">
-                        Here are some of the projects I've built with passion and precision. Each project is crafted to solve real-world problems and deliver exceptional user experiences.
+                        Here are some of the projects I've built with passion and precision. Each project is crafted to solve real world problems and deliver exceptional user experiences.
                     </p>
                     <div className="w-full max-w-4xl px-4 flex justify-center items-center">
                         <div className="neon-divider flex-grow"></div>
@@ -74,29 +74,31 @@ const MyProjects = () => {
 
                 {/* Project Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-                    
+
                     {/* Card 1: SportNest */}
                     <div className="glass-card glass-card-project rounded-[24px] p-6 flex flex-col h-full group premium-ambient-glow edge-lit-glass">
                         <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden mb-6">
-                            <img 
-                                alt="SportNest" 
-                                className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" 
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwqfqAGmi-IH5Tpt2EQdbdjWmm7Qu0_sMnq4XhZFkpsnn1frF8MOLy9H_8xOuGMecfYWGz58Vk2nGofNZ8plrcpmqx0aEPHzrJ66-8UdY1nXrHsJF_UixeqeEdcCJc9mFrSB3-wxy0Xhn5i4sDCPnYDR_3n4gGi5nbqHiHpUBjW5sVLVZXT6NOr0Cns7XnGMm0_I0zVpIZAXUYcAc_KJNocawRZMyu3pb1tCRHGTwZEtH7erB1M7h8VJ3gqgES-aKf_XxJQAhUEpYc" 
+                            <img
+                                alt="SportNest"
+                                className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+                                src="https://i.ibb.co/mVXmHwwp/Screenshot-770.png"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-[#050505] to-transparent opacity-60"></div>
                         </div>
                         <span className="text-xs font-mono text-[#c1ff72] mb-2 tracking-wider">PROJECT 01</span>
                         <h3 className="text-xl md:text-2xl font-bold text-white mb-3">SportNest</h3>
                         <p className="text-sm text-gray-400 mb-8 flex-grow leading-relaxed">
-                            A modern fitness platform that connects users with personalized workout plans, expert trainers, and nutrition guidance.
+                            A modern and responsive sports facility booking management platform where users can explore sports facilities, book available time slots, and manage their own facilities seamlessly.
                         </p>
                         <div className="flex flex-wrap gap-2 mb-8">
                             <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Next.js</span>
                             <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Tailwind CSS 4</span>
-                            <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">TypeScript</span>
-                            <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Zustand</span>
+                            <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">JavaScript</span>
+                            <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Better Auth</span>
+                            <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Express.js</span>
+                            <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">MongoDB</span>
                         </div>
-                        <a className="flex items-center justify-center gap-2 w-full py-4 rounded-xl btn-glow text-[#c1ff72] font-mono text-xs tracking-wider transition-all duration-300 hover:text-white" href="#">
+                        <a className="flex items-center justify-center gap-2 w-full py-4 rounded-xl btn-glow text-[#c1ff72] font-mono text-xs tracking-wider transition-all duration-300 hover:text-white" href="https://sportnest-sports-facility.vercel.app">
                             View Project <span className="material-symbols-outlined text-sm">open_in_new</span>
                         </a>
                     </div>
@@ -104,25 +106,27 @@ const MyProjects = () => {
                     {/* Card 2: TaskFlow */}
                     <div className="glass-card glass-card-project rounded-[24px] p-6 flex flex-col h-full group premium-ambient-glow edge-lit-glass">
                         <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden mb-6">
-                            <img 
-                                alt="TaskFlow" 
-                                className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" 
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZe6lqbC_OBVAuOkaCL-PBCbSnKLKMM5PFu_arSH9_qwprU0nxYWs8vg0EavufEdSHTSmEdmNeFNw-dX4WZfDpq3PzKA58po2FKgCqsf5MRZ0rXZv9hrmPGPmDJenApcrK_hip9mXLvaREfInYQjVUff0YNJCj_-xzdxyIA2Cq2yK8v97iDiNkcmCCvOQmkHysVn6NSCreNnYwr-H-Ju3_h10fvYza_3GnJvDRY5oJrbn3t_GhJWclGNj0J3vBaEbI0ujIDa8BZ3Wi" 
+                            <img
+                                alt="TaskFlow"
+                                className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+                                src="https://i.ibb.co/VZd5wRx/Screenshot-771.png"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-[#050505] to-transparent opacity-60"></div>
                         </div>
                         <span className="text-xs font-mono text-[#c1ff72] mb-2 tracking-wider">PROJECT 02</span>
-                        <h3 className="text-xl md:text-2xl font-bold text-white mb-3">TaskFlow</h3>
+                        <h3 className="text-xl md:text-2xl font-bold text-white mb-3">WanderLast Traveling Agency</h3>
                         <p className="text-sm text-gray-400 mb-8 flex-grow leading-relaxed">
-                            A productivity and task management SaaS platform designed to help teams collaborate, track progress, and boost efficiency.
+                            This is a website that you can you post new destination with in-detailed information for people can buy it for visiting the place.
                         </p>
                         <div className="flex flex-wrap gap-2 mb-8">
                             <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Next.js</span>
                             <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Tailwind CSS 4</span>
-                            <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">TypeScript</span>
-                            <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Prisma</span>
+                            <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">JavaScript</span>
+                            <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Better Auth</span>
+                            <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Express.js</span>
+                            <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">MongoDB</span>
                         </div>
-                        <a className="flex items-center justify-center gap-2 w-full py-4 rounded-xl btn-glow text-[#c1ff72] font-mono text-xs tracking-wider transition-all duration-300 hover:text-white" href="#">
+                        <a className="flex items-center justify-center gap-2 w-full py-4 rounded-xl btn-glow text-[#c1ff72] font-mono text-xs tracking-wider transition-all duration-300 hover:text-white" href="https://wanderlast-traveling-agency.vercel.app">
                             View Project <span className="material-symbols-outlined text-sm">open_in_new</span>
                         </a>
                     </div>
@@ -130,25 +134,26 @@ const MyProjects = () => {
                     {/* Card 3: Urbanic */}
                     <div className="glass-card glass-card-project rounded-[24px] p-6 flex flex-col h-full group premium-ambient-glow edge-lit-glass">
                         <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden mb-6">
-                            <img 
-                                alt="Urbanic" 
-                                className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" 
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB4V0gm3ME7zbqrHQwFSOVNCV3ffF8DtasP3NSrvUzkmux05VO7p84_M9Ge5G0riAccAHMdkz4azKqzrcAX8w0QoSSdrOucOpXFGNeoWoYefL9KNCG41F7-Awgl_DYB0_A0xJIwDcqpQoiWpEzryxTCZkd_MTUxfCqHCPCtnTraLETClizj5s0p8aFtbgd79x-RjVxo-DXLPffLbErLMUEq64i0PphsjnwXE3wHgHXQNNEb5Fce8U5L2CBg-Rn3UGLdrRJdEC-nTi0" 
+                            <img
+                                alt="Urbanic"
+                                className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+                                src="https://i.ibb.co/Dg7r6QLK/Screenshot-772.png"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-[#050505] to-transparent opacity-60"></div>
                         </div>
                         <span className="text-xs font-mono text-[#c1ff72] mb-2 tracking-wider">PROJECT 03</span>
-                        <h3 className="text-xl md:text-2xl font-bold text-white mb-3">Urbanic</h3>
+                        <h3 className="text-xl md:text-2xl font-bold text-white mb-3">Tiles Gallery</h3>
                         <p className="text-sm text-gray-400 mb-8 flex-grow leading-relaxed">
-                            A modern e-commerce platform for fashion lovers to discover, explore, and shop the latest trends with a smooth experience.
+                            A modern and responsive web application to showcase a beautiful collection of tiles. Users can explore, search, and view detailed information about different tiles, along with authentication and profile management features.
                         </p>
                         <div className="flex flex-wrap gap-2 mb-8">
                             <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Next.js</span>
-                            <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Tailwind CSS 4</span>
                             <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">JavaScript</span>
-                            <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Stripe</span>
+                            <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Tailwind CSS 4</span>
+                            <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Mongo DB</span>
+                            <span className="px-3 py-1 bg-[#c1ff72]/10 border border-[#c1ff72]/20 rounded-full text-[10px] font-mono text-[#c1ff72] uppercase">Hero UI</span>
                         </div>
-                        <a className="flex items-center justify-center gap-2 w-full py-4 rounded-xl btn-glow text-[#c1ff72] font-mono text-xs tracking-wider transition-all duration-300 hover:text-white" href="#">
+                        <a className="flex items-center justify-center gap-2 w-full py-4 rounded-xl btn-glow text-[#c1ff72] font-mono text-xs tracking-wider transition-all duration-300 hover:text-white" href="https://tiles-gallery-rust.vercel.app">
                             View Project <span className="material-symbols-outlined text-sm">open_in_new</span>
                         </a>
                     </div>
@@ -157,7 +162,7 @@ const MyProjects = () => {
 
                 {/* GitHub Action Section */}
                 <div className="mt-18 flex justify-center">
-                    <a className="group relative flex items-center gap-4 px-10 py-5 rounded-full border border-white/5 overflow-hidden transition-all duration-500 hover:scale-105 hover:border-[#c1ff72]/50 btn-glow github-glow" href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <a className="group relative flex items-center gap-4 px-10 py-5 rounded-full border border-white/5 overflow-hidden transition-all duration-500 hover:scale-105 hover:border-[#c1ff72]/50 btn-glow github-glow" href="https://github.com/apurbochaki-lab" target="_blank" rel="noopener noreferrer">
                         {/* Inner Glow */}
                         <div className="absolute inset-0 bg-[#c1ff72] opacity-0 group-hover:opacity-5 transition-opacity duration-500"></div>
                         <span className="material-symbols-outlined text-[#c1ff72] text-3xl">terminal</span>

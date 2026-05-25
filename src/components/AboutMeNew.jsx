@@ -6,18 +6,18 @@ import { Download, ArrowRight, Play, Users, Briefcase, Rocket } from 'lucide-rea
 const stats = [
     {
         icon: <Users size={20} />,
-        value: '3.5K+',
-        label: 'Happy Clients',
+        value: '15+',
+        label: 'Completed UI Sections',
     },
     {
         icon: <Briefcase size={20} />,
-        value: '10+',
-        label: 'Years Expertise',
+        value: '20+',
+        label: 'Responsive Web Projects',
     },
     {
         icon: <Rocket size={20} />,
-        value: '600+',
-        label: 'Projects',
+        value: '100%',
+        label: 'Focus on Clean User Experience',
     },
 ]
 
@@ -137,27 +137,29 @@ const AboutMeNew = () => {
 
                             <div className='space-y-4 text-lg leading-[1.8] text-[#c2c9b3]'>
 
-                                <p>
-                                    I&apos;m Fin Harper, a UI/UX designer with over{' '}
-                                    <span className='font-medium text-[#c1ff72]'>
-                                        15 years
-                                    </span>{' '}
-                                    of experience turning ideas into engaging digital experiences.
-                                    I&apos;ve partnered with agencies, startups, and visionary individuals
-                                    to design solutions where{' '}
-                                    <span className='font-medium text-[#c1ff72]'>
-                                        creativity meets usability
-                                    </span>.
-                                </p>
+                                {/*       */}
 
                                 <p>
+                                    I&apos;m a frontend web developer focused on building{' '}
+                                    <span className='font-medium text-[#c1ff72]'>
+                                        modern, responsive <span className='text-[#c2c9b3]'>and</span> user-friendly
+                                    </span>{' '}
+                                    digital experiences. I combine clean design with functional development to create websites that not only{' '}
+                                    <span className='font-medium text-[#c1ff72]'>
+                                        look professional
+                                    </span>
+                                     but also feel <span className='font-medium text-[#c1ff72]'>smooth, fast,</span> and intuitive for users.
+                                    
+                                </p>
+
+                                {/* <p>
                                     Every project is an opportunity to create something meaningful,
                                     and I thrive on bringing{' '}
                                     <span className='font-medium text-[#c1ff72]'>
                                         clarity and impact
                                     </span>{' '}
                                     to every digital interaction.
-                                </p>
+                                </p> */}
 
                             </div>
 
@@ -219,8 +221,8 @@ const AboutMeNew = () => {
                     <div className='glass-card group relative aspect-[0.75/1] w-full max-w-[480px] overflow-hidden rounded-3xl border border-[#c1ff72]/20 bg-white/[0.04] backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-[#c1ff72]/40'>
 
                         <img
-                            src='https://lh3.googleusercontent.com/aida-public/AB6AXuAfrFh8mxH_bh2R1wJ6zCAGp6-JmRVRXo5cG-bz1RYeaCp5pO_kq0OI4HC63KnI44IYbOF_0UAFNE39kpqrW9ZOU-KD9G2JnpqEMrzSbI7Qz3BMjatHbd0tvzhQedmq6Rd9CNgGVPxm2H6JOJ1r9Y9Z_hpRNKxjnVO-pbJqP1EXbzM1Yb3YAl-_xSWCmjgk1C-UYhzNredgmPGeGDNkjaSlPiyJ33wJsiHeuCsPa4l8TrqSYhCKRh0H0idbdZY-xraBZLezsrutEIl6'
-                            alt='Fin Harper'
+                            src='https://i.ibb.co.com/pvvybtGW/Apurbo-Chaki.png'
+                            alt='Apurbo Chaki'
                             className='h-full w-full object-cover grayscale brightness-90 transition-all duration-700 group-hover:grayscale-0'
                         />
 
@@ -231,11 +233,11 @@ const AboutMeNew = () => {
 
                                 <div className='space-y-1'>
                                     <p className='font-mono text-sm tracking-widest text-[#c1ff72]'>
-                                        SENIOR DESIGNER
+                                        FONTEND WEB DEVELOPER
                                     </p>
 
                                     <h3 className='text-2xl font-semibold text-white'>
-                                        Fin Harper
+                                        Apurbo Chaki
                                     </h3>
                                 </div>
 

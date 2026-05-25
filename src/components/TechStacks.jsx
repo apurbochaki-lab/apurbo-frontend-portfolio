@@ -324,11 +324,11 @@ const TechStacks = () => {
                     </div>
                     <div className="flex flex-wrap items-center gap-4">
                         {/* Contact Handles */}
-                        <a className="bg-black/40 border border-white/10 rounded-xl px-4 py-3 flex items-center gap-3 hover:border-[#c1ff72]/40 transition-colors group" href="#">
+                        <a className="bg-black/40 border border-white/10 rounded-xl px-4 py-3 flex items-center gap-3 hover:border-[#c1ff72]/40 transition-colors group" href="https://github.com/apurbochaki-lab">
                             <img alt="GitHub" className="w-5 h-5 opacity-70 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqHGt-QVqz6L0IkuGwu4D69RNN1k-6ouCXU2pwONb2FedWJQu7eNxPwdMqhhmTM5fAJwhA0PvRrrTTZ2ad9fTuFsi-pfDu6iauZBIpMi4RhWilDdkuCB5czvYLYMG0EHQ9HzMzK1wk4P7187ArO7L4YZsWXXZykPjpK2FlX6_jlXCyiaLSuKdvIdxJGmebbWDAZbVElIr0Cz5BPoqBnJ0qCL1QdqVJF3EvQG1TM8OJkaKCl0TEN10igy8JeMm57FYtSIv3pqqA2SFZ" />
-                            <span className="text-xs font-mono text-gray-300">/github_handle</span>
+                            <span className="text-xs font-mono text-gray-300">/github_profile</span>
                         </a>
-                        <a className="bg-black/40 border border-white/10 rounded-xl px-4 py-3 flex items-center gap-3 hover:border-[#c1ff72]/40 transition-colors group" href="#">
+                        <a className="bg-black/40 border border-white/10 rounded-xl px-4 py-3 flex items-center gap-3 hover:border-[#c1ff72]/40 transition-colors group" href="https://www.linkedin.com/in/apurbo-chaki8">
                             <img alt="LinkedIn" className="w-5 h-5 opacity-70 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaIrs64eKArIW-vaAw82lyu3Z2ZKfqjILi2hwfa55mhpLU8hkdOgJBOGXv0_V5xl1guxnZ6SouLiFJ-fxzUax26rcfCjHVDEIBBQJdI4a34tbHngx-F7kQCFzLcATbb6OgY-vdbNFPK_2KSdmuh02XYhLDkYn4m9VP6Fm00P6PKkoE3hh0F-GxBN8UQOie3dbHLQUwRxJOJcdOSWevf5xkDR__0_qDwbp0tG2nXQS5BkZyaM6cPgriTdON1ojLAg90_nqx5a1ydDJp" />
                             <span className="text-xs font-mono text-gray-300">/linkedin_profile</span>
                         </a>
@@ -336,7 +336,7 @@ const TechStacks = () => {
                             <svg className="w-5 h-5 text-[#c1ff72] opacity-70 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
                             </svg>
-                            <span className="text-xs font-mono text-gray-300">hello@domain.com</span>
+                            <span className="text-xs font-mono text-gray-300">apurbochaki4@gmail.com</span>
                         </a>
                     </div>
                 </footer>
